@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.3.2	商户账户换绑卡<ant.mybank.merchantprod.account.bindbankcard> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="NewBankCardNo"></xmlTag>
+  <xmlTag tagName="NewMobile"></xmlTag>
+  <xmlTag tagName="MobileAuthCode"></xmlTag>
+  <xmlTag tagName="OutTradeNo"></xmlTag>
+</body>

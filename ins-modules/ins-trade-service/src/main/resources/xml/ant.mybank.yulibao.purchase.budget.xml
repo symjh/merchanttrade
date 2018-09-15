@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.4.3	余利宝申购预算接口<ant.mybank.yulibao.purchase.budget> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="FundCode"></xmlTag>
+  <xmlTag tagName="Amount"></xmlTag>
+  <xmlTag tagName="Currency"></xmlTag>
+</body>

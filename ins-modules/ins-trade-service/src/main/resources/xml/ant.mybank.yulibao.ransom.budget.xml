@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.4.5	余利宝赎回预算接口<ant.mybank.yulibao.ransom.budget> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="FundCode"></xmlTag>
+  <xmlTag tagName="Amount"></xmlTag>
+  <xmlTag tagName="Currency"></xmlTag>
+</body>

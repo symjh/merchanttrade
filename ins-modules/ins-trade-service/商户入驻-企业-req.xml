@@ -1,0 +1,77 @@
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.register</Function>
+      <ReqTime>2018-09-13 15:32:12.386</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>df4debcd-a191-458b-ba32-39ba254f78b0</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <OutMerchantId>e8314ee8b0a546beba5d479d9519bda8</OutMerchantId>
+      <MerchantName>名称</MerchantName>
+      <MerchantType>03</MerchantType>
+      <DealType>01</DealType>
+      <SupportPrepayment>N</SupportPrepayment>
+      <SettleMode>01</SettleMode>
+      <Mcc>2015050700000000</Mcc>
+      <MerchantDetail>eyJDb250YWN0TW9iaWxlIjoiMTc2MjAzNTg5MjUiLCJMaWNlbnNlUGhvdG8iOiJlNjNmNTViYy04
+        ZDg3LTRiOTgtODE4Yy05Zjg3ZTFmM2JjMGUiLCJFbWFpbCI6InlhbnNodWlwaW5nOTI1QDE2My5j
+        b20iLCJBZGRyZXNzIjoiIiwiUHJpbmNpcGFsQ2VydE5vIjoiNDMwNzIzMTk4ODA5MTAyNjUwIiwi
+        UHJpbmNpcGFsUGVyc29uIjoi5rW35Y2X5paw6KeG57q/5Lq65Yqb6LWE5rqQ5pyN5Yqh5pyJ6ZmQ
+        5YWs5Y+4IiwiU2hvcFBob3RvIjoiIiwiQ2l0eSI6IiIsIkxlZ2FsUGVyc29uIjoi5ZCN56ewIiwi
+        UHJvdmluY2UiOiIiLCJCdXNzQXV0aE51bSI6IjEyMzIzMjMyMjExMTExMSIsIkNlcnRQaG90b0Ei
+        OiJkOWE4ZjQwNi1iM2VlLTQ0ZjUtYmU1ZS03OGNiZmFmZDc3ZTMiLCJQcmdQaG90byI6ImZmOGE0
+        NGNhLWNjMWQtNGZjOS1hNTFlLTllNmFkMDUwOTg4MyIsIkFsaWFzIjoi5Lit56eR6L2vMeWPtyIs
+        IkNlcnRQaG90b0IiOiI1YjgwZTBkMi03MjhmLTQzYTgtYmE1MC0xZTc2ZTk3OTZiNzMiLCJQcmlu
+        Y2lwYWxDZXJ0VHlwZSI6IjAxIiwiU3Vic2NyaWJlQXBwSWQiOiIiLCJQcmluY2lwYWxNb2JpbGUi
+        OiIiLCJDZXJ0T3JnQ29kZSI6IjIzMzIyMyIsIkNvbnRhY3ROYW1lIjoi5Lil5rC05bmzIiwiRGlz
+        dHJpY3QiOiIiLCJTZXJ2aWNlUGhvbmVObyI6IjAxMDQwMzA0MjMwIiwiT3RoZXJQaG90byI6IiIs
+        IkluZHVzdHJ5TGljZW5zZVBob3RvIjoiYjk0NjdiMmUtYTA5NS00ZDBlLThjMjEtZjYzNTAzZmUz
+        NTZlIn0=
+      </MerchantDetail>
+      <TradeTypeList>01,02,06,</TradeTypeList>
+      <PayChannelList>01,02,</PayChannelList>
+      <DeniedPayToolList>03,</DeniedPayToolList>
+      <FeeParamList>W3siRmVlVmFsdWUiOiIwLjAwMzUiLCJGZWVUeXBlIjoiMDIiLCJDaGFubmVsVHlwZSI6IjAxIn0s
+        eyJGZWVWYWx1ZSI6IjAuMDAzNSIsIkZlZVR5cGUiOiIwMiIsIkNoYW5uZWxUeXBlIjoiMDIifV0=
+      </FeeParamList>
+      <BankCardParam>eyJDb250YWN0TGluZSI6IjEwMjMzMTAyMjA5NCIsIkJhbmtDYXJkTm8iOiI2MjEyMjYxMjAyMDAy
+        NDE1MjEwIiwiQ2VydFR5cGUiOiIwMSIsIkJhbmtDZXJ0TmFtZSI6IuWQjeensCIsIkJyYW5jaE5h
+        bWUiOiLlt6XllYbpk7booYwiLCJCcmFuY2hDaXR5IjoiMzMwMTAwIiwiQ2VydE5vIjoiMjAyNDM2
+        MTk5NDAyMDYwNDk0IiwiQ2FyZEhvbGRlckFkZHJlc3MiOiLmna3lt54iLCJBY2NvdW50VHlwZSI6
+        IjAyIiwiQnJhbmNoUHJvdmluY2UiOiIzMzAwMDAifQ==
+      </BankCardParam>
+      <AuthCode>888888</AuthCode>
+      <OutTradeNo>e8314ee8b0a546beba5d479d9519bda8</OutTradeNo>
+      <SupportStage>N</SupportStage>
+      <PartnerType>03</PartnerType>
+      <AlipaySource>2018090700000286</AlipaySource>
+      <WechatChannel></WechatChannel>
+      <RateVersion>RS</RateVersion>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>7IA2/CdGyMpb8y6MF6KhTkbmCXE=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      T2vbjTtL1yjQatrO+dvDcnSxxZm7RsEIPigY8ftPXyEHnNgqq0msh1C7yVa7o+C4Vu7lNpO7EEdH
+      UydyJkHqXVi7/Bbw0YpHYX/FamD71TRheQp+FIkPLXbTu8lDgxuKdzN4fp861mVZHFd/Tuj/Qm+N
+      mXcLjVJAnBK38Zv/QX5iM5ydVJ9JY+LTYDvhAQEK6LtUdqRuD1/p/+ctvz5GCx53UbCdOMYTfjyI
+      FRB2ukCOrNi1q/RlxDz4csfBecsbZf1gRMM1Yk9bTjW5LFKj3B6ifwHCwzSt5SxBdM3I9CoGgtZn
+      VCShZw+xWz4+bQddRboHw6r3E2TKkxieyCbOnQ==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>

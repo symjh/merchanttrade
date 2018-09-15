@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.3.4	商户账户查询接口<ant.mybank.merchantprod.account.query> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+</body>

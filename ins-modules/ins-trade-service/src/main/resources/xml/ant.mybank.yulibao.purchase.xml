@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.4.4	余利宝申购接口<ant.mybank.yulibao.purchase> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="FundCode"></xmlTag>
+  <xmlTag tagName="Amount"></xmlTag>
+  <xmlTag tagName="Currency"></xmlTag>
+  <xmlTag tagName="OutTradeNo"></xmlTag>
+</body>

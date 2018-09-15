@@ -1,0 +1,71 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: ins-config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Ripin/merchanttrade-config.git
+          default-label: ${spring.profiles.active}   #解决监控down
+
+# 关闭安全管理
+management:
+  security:
+    enabled: false
+endpoints:
+  health:
+    sensitive: false
+
+---
+spring:
+  profiles: dev
+#  rabbitmq:
+#    host: 47.106.91.233
+#    port: 5672
+#    username: sinosoft
+#    password: ENC(s2rqCEwwn7JrCjAbhCoxqyTT2g1RnuwT)
+#    virtual-host: /vhost_sinosoft
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 47.106.91.233
+    #instance-id: ${eureka.instance.ip-address}:${server.port}
+    appname: ${spring.application.name}-${spring.profiles}
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://ripin:12345@47.106.91.233:8761/eureka
+    registry-fetch-interval-seconds: 10
+---
+spring:
+  profiles: prd
+#  rabbitmq:
+#    host: 47.106.91.233
+#    port: 5672
+#    username: sinosoft
+#    password: ENC(s2rqCEwwn7JrCjAbhCoxqyTT2g1RnuwT)
+#    virtual-host: /vhost_sinosoft
+  cloud:
+    config:
+      retry:
+        initial-interval: 3000
+        multiplier: 1.5
+        max-interval: 20000
+        max-attempts: 6
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 47.106.91.233
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://ripin:12345@47.106.91.233:8761/eureka
+    registry-fetch-interval-seconds: 10

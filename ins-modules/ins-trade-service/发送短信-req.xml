@@ -1,0 +1,39 @@
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.sendsmscode</Function>
+      <ReqTime>2018-09-13 19:50:08.505</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>295cd60d-4a8a-4071-aa2f-f7a7dcb26144</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <OutTradeNo>90c419425318453f9adb6d4d50b71251</OutTradeNo>
+      <BizType>04</BizType>
+      <Mobile>17620358925</Mobile>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>yALTPl+dt9vLzLOPrIEivyzaREw=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      UkYr6sVJYx5M4B79IhfNjPWXKTcopkyvaYj5DTUVzhc7/L1bRoHk8op1WLRe1zu4olG8ZHEysTyr
+      JP2sHuKAuD74dbBabwv9WGCnKjS+orP378W3kZ8kAh0Ilpw9Er8eBLl3KbgTZBvX4YZjmfG52hZD
+      DbKI9IkJQ32CIZUufp2jad1ndDwB/ArOKWIkez/BC/P2bHOV1XquZ/u1y/94DBLOwqGMu9XVlrTM
+      PUP+ve0H3DtByYRzTfNAa4Vy8PO99t7meNHhMpIR24uR4xmi0vUOwQQanMjlHg6Hmhrw29EVuVot
+      De7D+9B7O92qtJzSA48grpDwvpwokDlp8KGVog==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--商户入驻申请接口（同时开网商银行账户）<ant.mybank.merchantprod.merchant.registerWithAccount> -->
+<body>
+  <xmlTag tagName="IsvOrgId" defaultValue="202210000000000001025"></xmlTag>
+  <xmlTag tagName="OutMerchantId"></xmlTag>
+  <xmlTag tagName="MerchantName"></xmlTag>
+  <xmlTag tagName="MerchantType"></xmlTag>
+  <xmlTag tagName="DealType"></xmlTag>
+  <xmlTag tagName="SupportPrepayment"></xmlTag>
+  <xmlTag tagName="SettleMode"></xmlTag>
+  <xmlTag tagName="Mcc"></xmlTag>
+  <xmlTag tagName="MerchantDetail"></xmlTag>
+  <xmlTag tagName="TradeTypeList"></xmlTag>
+  <xmlTag tagName="PayChannelList"></xmlTag>
+  <xmlTag tagName="DeniedPayToolList"></xmlTag>
+  <xmlTag tagName="FeeParamList"></xmlTag>
+  <xmlTag tagName="AuthCode"></xmlTag>
+  <xmlTag tagName="OutTradeNo"></xmlTag>
+</body>

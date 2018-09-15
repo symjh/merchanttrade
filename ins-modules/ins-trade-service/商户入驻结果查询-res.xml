@@ -1,0 +1,52 @@
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.register.query</Function>
+      <RespTime>20180913190346</RespTime>
+      <RespTimeZone>UTC+8</RespTimeZone>
+      <ReqMsgId>3befc561-32aa-423d-bbe2-fccce5ce700f</ReqMsgId>
+      <Reserve></Reserve>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg>请求处理成功</ResultMsg>
+      </RespInfo>
+      <MerchantId>226801000000141472259</MerchantId>
+      <RegisterStatus>1</RegisterStatus>
+      <FailReason></FailReason>
+      <OutTradeNo>e81a823858d04c5ab632169dff1b524f</OutTradeNo>
+      <OrderNo>2018091311150710010000000000000000163749</OrderNo>
+      <AccountNo></AccountNo>
+      <Smid>2088231778392190</Smid>
+      <WechatChannelList>W3siQ2hhbm5lbElkIjoiMjQwODI0MDA4IiwiU3RhdHVzIjoiMSIsIldlY2hhdE1lcmNoSWQiOiIyNDIwODAyNzIifV0=</WechatChannelList>
+      <OnlineSmid></OnlineSmid>
+      <AlipayChannelList>
+        W3siQXBwaWQiOiIyMDE1MDUxMTAwMDY5MTcwIiwiUGlkIjoiMjA4ODkxMTIxMjQxNjIwMSIsIlJhdGVWZXJzaW9uIjoiUlMiLCJTdWJNZXJjaGFudElkIjoiMjA4ODIzMTc3ODM5MjE5MCJ9XQ==
+      </AlipayChannelList>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>ABN4NKvym8LK02a0upALAcgURJQ=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      kahyAKzibzufyChdt6tDD/JYOgQYUr4chC5A40N08F8pbwiBqWnktbA6pks/rCmI/dD5vKcH52jX
+      in5D3HRc4yRUZVCdH2xEgjyJgbX2IQiCsYjgGqWHT4bCjxqNPtEUW8zsdh5wIamJOcEOs16U1rfo
+      5XqbOXvdOrztmuDZDiA=
+    </SignatureValue>
+  </Signature>
+</document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.3.5	商户账户交易明细查询<ant.mybank.stmtcore.accountinfo.query> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="QueryStartDate"></xmlTag>
+  <xmlTag tagName="QueryEndDate"></xmlTag>
+  <xmlTag tagName="PageSize"></xmlTag>
+  <xmlTag tagName="PageIndex"></xmlTag>
+  <xmlTag tagName="CardNo"></xmlTag>
+  <xmlTag tagName="BizTypeList"></xmlTag>
+  <xmlTag tagName="TradeInStatusList"></xmlTag>
+  <xmlTag tagName="TradeAmtMin"></xmlTag>
+  <xmlTag tagName="TradeAmtMax"></xmlTag>
+</body>

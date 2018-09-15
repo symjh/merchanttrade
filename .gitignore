@@ -10,7 +10,12 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
 # Package Files #
+target/
 *.jar
 *.war
 *.nar
@@ -19,9 +24,28 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# eclipse ignore
+.settings/
+.project
+.classpath
 
-/.*
-!.gitignore
-target/*
+# idea ignore
+.idea/
+*.iml
+
+# logs #
+logs
+
+# temp ignore
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+# system ignore
+.DS_Store
+Thumbs.db
+.metadata

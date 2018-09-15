@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>ins.platform</groupId>
+    <artifactId>merchanttrade</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ins.platform.merchanttrade</groupId>
+  <artifactId>ins-modules</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>ins-modules</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+    <module>ins-daemon-service</module>
+    <module>ins-mc-service</module>
+    <module>ins-sso-client-demo</module>
+    <module>ins-upms-service</module>
+    <module>ins-trade-service</module>
+  </modules>
+
+</project>

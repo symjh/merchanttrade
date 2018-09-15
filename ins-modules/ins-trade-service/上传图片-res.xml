@@ -1,0 +1,83 @@
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.uploadphoto</Function>
+      <RespTime>20180912174621</RespTime>
+      <RespTimeZone>Asia/Shanghai</RespTimeZone>
+      <ReqMsgId>a0029fca-0f00-4152-b073-308e439c089d</ReqMsgId>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg>请求处理成功</ResultMsg>
+      </RespInfo>
+      <PhotoUrl>d9a8f406-b3ee-44f5-be5e-78cbfafd77e3</PhotoUrl>
+      <OutTradeNo>a0029fca-0f00-4152-b073-308e439c089d</OutTradeNo>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>ZP5udO5CHPULmfQWP9LO5DlMAtk=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      YceNA+QWDTULQXN+RfPRklA0sx6O1iw97WiiygdGBcvf9xLnv179R3DHWDMyXgzRBeZwG0diCjxl
+      +IsuY5ZrtkXjdW4lVVCNvY0Vq4izia1mRFFRiWNkix62JGb0LnHb7D/RN/PSbauuJ2i1aPIbnyXW
+      zA/1hOT/thTdTjyzcec=
+    </SignatureValue>
+  </Signature>
+</document>
+
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.uploadphoto</Function>
+      <RespTime>20180912174953</RespTime>
+      <RespTimeZone>Asia/Shanghai</RespTimeZone>
+      <ReqMsgId>d87accea-aeed-462e-88aa-4ba4a0078b78</ReqMsgId>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg>请求处理成功</ResultMsg>
+      </RespInfo>
+      <PhotoUrl>5b80e0d2-728f-43a8-ba50-1e76e9796b73</PhotoUrl>
+      <OutTradeNo>d87accea-aeed-462e-88aa-4ba4a0078b78</OutTradeNo>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>O7X0W7GpXh+nQRSck83hH8FBGYI=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      QUzxLRCJGx1WAlSLqzCpr1RYxk/aHVOFoDa4ftvWNzuc65ujb1T//7Odkqs4P6hX1eti49AskWH2
+      9ZRS4w2KaOURSVW1pn4Mpf227mclzx6RDQH6Ib9QNJmsqU4BQ3JCx9uKdbU7XgaGJpP2tN9SMqL+
+      OwAIX+MT87MbHCn5m1U=
+    </SignatureValue>
+  </Signature>
+</document>

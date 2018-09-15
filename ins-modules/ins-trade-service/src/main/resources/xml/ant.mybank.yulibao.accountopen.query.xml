@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.4.2	余利宝签约查询接口<ant.mybank.yulibao.accountopen.query> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="FundCode"></xmlTag>
+</body>

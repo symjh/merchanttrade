@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.3.1	商户银行账户开通<ant.mybank.merchantprod.account.open> -->
+<body>
+<xmlTag tagName="IsvOrgId"></xmlTag>
+<xmlTag tagName="AuthCode"></xmlTag>
+<xmlTag tagName="OutTradeNo"></xmlTag>
+<xmlTag tagName="OutMerchantId"></xmlTag>
+<xmlTag tagName="CertName"></xmlTag>
+<xmlTag tagName="CertType" defaultValue="01"></xmlTag>
+<xmlTag tagName="CertNo"></xmlTag>
+<xmlTag tagName="Mobile"></xmlTag>
+<xmlTag tagName="BankCardNo"></xmlTag>
+</body>

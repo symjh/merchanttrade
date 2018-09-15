@@ -1,0 +1,43 @@
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.register</Function>
+      <RespTime>20180913153707</RespTime>
+      <RespTimeZone>UTC+8</RespTimeZone>
+      <ReqMsgId>accfbb1f-2a39-4546-8cc2-8f888640e590</ReqMsgId>
+      <Reserve></Reserve>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg></ResultMsg>
+      </RespInfo>
+      <OutMerchantId>e81a823858d04c5ab632169dff1b524f</OutMerchantId>
+      <OrderNo>2018091311150710010000000000000000163749</OrderNo>
+      <OutTradeNo>e81a823858d04c5ab632169dff1b524f</OutTradeNo>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>NeEpjhcw4nlzGpgrCRA5VpKaWXw=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      nilXC+CVWv4VrbpR7UP7kk86l08I+MbFBAPnq7kEcslhVyVJeIAwxN68eAbBvRPowc16Q8G0tD4K
+      3vkvmyN0jk4keGsY9IuyoAMXSuAjkOhGr6fFRkMbi1j1NM3jCLOHMd/l11YzT6CJGWuaEXkgQjaQ
+      pa1M27vJmbd6qERmZbY=
+    </SignatureValue>
+  </Signature>
+</document>

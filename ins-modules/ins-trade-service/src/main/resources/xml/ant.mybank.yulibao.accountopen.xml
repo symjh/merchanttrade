@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--4.4.1	余利宝签约接口<ant.mybank.yulibao.accountopen>-->
+<body>
+<xmlTag tagName="IsvOrgId"></xmlTag>
+<xmlTag tagName="OutTradeNo"></xmlTag>
+<xmlTag tagName="MerchantId"></xmlTag>
+<xmlTag tagName="FundCode" defaultValue="001529"></xmlTag>
+</body>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--4.3.6	活期账户余额查询<ant.mybank.depbuss.accountbalance.query> -->
+<body>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="CardNo"></xmlTag>
+  <xmlTag tagName="Currency"></xmlTag>
+  <xmlTag tagName="CashExCode"></xmlTag>
+</body>
