@@ -22,7 +22,7 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: 47.106.91.233
+#    ip-address: 47.106.91.233
     appname: ${spring.application.name}-${spring.profiles}
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 20
