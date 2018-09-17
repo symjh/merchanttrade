@@ -1,0 +1,42 @@
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.updateMerchant</Function>
+      <ReqTime>2018-09-17 17:20:27.403</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>33ecd863-677d-4fee-857c-d4c90a1795b7</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <MerchantId>226801000000141472259</MerchantId>
+      <MerchantDetail>eyJDb250YWN0TmFtZSI6IuawtOeUtei0uSJ9</MerchantDetail>
+      <FeeParamList>W3siRmVlVmFsdWUiOiIwLjAwMzEiLCJGZWVUeXBlIjoiMDIiLCJDaGFubmVsVHlwZSI6IjAxIn0s
+        eyJGZWVWYWx1ZSI6IjAuMDAzMSIsIkZlZVR5cGUiOiIwMiIsIkNoYW5uZWxUeXBlIjoiMDIifV0=
+      </FeeParamList>
+      <OutTradeNo>42207982-7626-4822-8d5b-70ddb46ea5bb</OutTradeNo>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>A2v8pwpfLCLMtzppBJ1M2v6+jkk=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      In2CUzUj34PNyaJaA4jLD8ll3PAioJcx1LyghwpXmVi9RhOXzmkJrCGkHXCy6ulQ7W81+zbianse
+      awTD1MeC20tQJWS61RtbraOsx9LlgIribx4hlIs5vgIabdu2mtdO4PD/bj7Ey2QzCBge6sdbOl6g
+      0xzdA5t1RqHL5KKJ261cBcC9SNGhEkYpPNfw5ODpaltfjGZoXgDw+bUw2rCYaC59TpygktKg/Goy
+      3AXcPfuKy4tcZLzbKbWUHoSxzqC8ZhgU1ZGPzKDhohzMhG1fuh1a+Qp5y4gKSbmq5LDyZDCniN35
+      oBUQvHiwOoQ24BywpS9JAhdJlKU32tswlaMViQ==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>

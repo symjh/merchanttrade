@@ -22,6 +22,7 @@ import com.mybank.bkmerchant.models.FeeParam;
 import com.mybank.bkmerchant.models.MerchantDetail;
 
 /**
+ *  注意：此接口废弃-2018-09-17
  *  商户入驻申请接口，同时开网商银行账户
  *
  *  <p/>

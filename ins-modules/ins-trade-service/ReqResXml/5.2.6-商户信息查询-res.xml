@@ -1,0 +1,73 @@
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.query</Function>
+      <RespTime>20180917172825</RespTime>
+      <RespTimeZone>UTC+8</RespTimeZone>
+      <ReqMsgId>be0521da-ac8e-4a97-bfc2-2732c14efc00</ReqMsgId>
+      <Reserve></Reserve>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg>请求处理成功</ResultMsg>
+      </RespInfo>
+      <MerchantName>中科软1号</MerchantName>
+      <MerchantId>226801000000141472259</MerchantId>
+      <MerchantType>01</MerchantType>
+      <DealType>01</DealType>
+      <SupportPrepayment>N</SupportPrepayment>
+      <SettleMode>01</SettleMode>
+      <Mcc>2015050700000000</Mcc>
+      <MerchantDetail>
+        eyJBbGlhcyI6IuS4reenkei9rzHlj7ciLCJDZXJ0UGhvdG9BIjoiZDlhOGY0MDYtYjNlZS00NGY1LWJlNWUtNzhjYmZhZmQ3N2UzIiwiQ2VydFBob3RvQiI6IjViODBlMGQyLTcyOGYtNDNhOC1iYTUwLTFlNzZlOTc5NmI3MyIsIkNpdHkiOiIiLCJDb250YWN0TW9iaWxlIjoiMTc2MjAzNTg5MjUiLCJDb250YWN0TmFtZSI6IuawtOeUtei0uSIsIkRpc3RyaWN0IjoiIiwiRW1haWwiOiJ5YW5zaHVpcGluZzkyNUAxNjMuY29tIiwiUHJpbmNpcGFsQ2VydE5vIjoiMjAyNDM2MTk5NDAyMDYwNDk0IiwiUHJpbmNpcGFsQ2VydFR5cGUiOiIwMSIsIlByaW5jaXBhbE1vYmlsZSI6IjE3NjIwMzU4OTI1IiwiUHJpbmNpcGFsUGVyc29uIjoi5q2m5rui5b2pwrfmsI8iLCJQcm92aW5jZSI6IiIsIlNlcnZpY2VQaG9uZU5vIjoiMDEwNDAzMDQyMzAifQ==
+      </MerchantDetail>
+      <TradeTypeList>01,02,06</TradeTypeList>
+      <PayChannelList>01,02</PayChannelList>
+      <DeniedPayToolList>03</DeniedPayToolList>
+      <FeeParamList>
+        W3siQ2hhbm5lbFR5cGUiOiIwMSIsIkZlZVR5cGUiOiIwMiIsIkZlZVZhbHVlIjowLjAwMzF9LHsiQ2hhbm5lbFR5cGUiOiIwMiIsIkZlZVR5cGUiOiIwMiIsIkZlZVZhbHVlIjowLjAwMzF9XQ==
+      </FeeParamList>
+      <BankCardParam>
+        eyJBY2NvdW50VHlwZSI6IjAxIiwiQmFua0NhcmRObyI6IjYyMTIyNjEyMDIwMDI0MTUyMTAiLCJCYW5rQ2VydE5hbWUiOiLlkI3np7AiLCJDYXJkSG9sZGVyQWRkcmVzcyI6IuadreW3niIsIkNlcnRObyI6IjIwMjQzNjE5OTQwMjA2MDQ5NCIsIkNlcnRUeXBlIjoiMDEifQ==
+      </BankCardParam>
+      <SupportStage>N</SupportStage>
+      <Smid>2088231778392190</Smid>
+      <WechatChannelList>W3siQ2hhbm5lbElkIjoiMjQwODI0MDA4IiwiV2VjaGF0TWVyY2hJZCI6IjI0MjA4MDI3MiJ9XQ==</WechatChannelList>
+      <OnlineMcc></OnlineMcc>
+      <OnlineSmid></OnlineSmid>
+      <AlipaySource>2018090700000286</AlipaySource>
+      <AlipayOnlineSource></AlipayOnlineSource>
+      <MergeSettle>0</MergeSettle>
+      <MergeDt></MergeDt>
+      <SiteInfo></SiteInfo>
+      <SiteInfo></SiteInfo>
+      <AlipayChannelList>
+        W3siQXBwaWQiOiIyMDE1MDUxMTAwMDY5MTcwIiwiUGlkIjoiMjA4ODkxMTIxMjQxNjIwMSIsIlJhdGVWZXJzaW9uIjoiUlMiLCJTdWJNZXJjaGFudElkIjoiMjA4ODIzMTc3ODM5MjE5MCJ9XQ==
+      </AlipayChannelList>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>gKssAiExlPhluXuh9rrhWwlyRWI=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      DTKE8JuAf9Qs5Edf7dCgAxPOqydFa7cTrl7U53zl2+ABeyytRk9DkRnmBgkuDW5W2bj04TJqShuO
+      SFPxE0EF//0TOB95ot68/FIw4rt/V7fWq8HAJcsuy+zfgKeQbjcssXiGqV0X/pg31OIieasDCexy
+      7KE9ZYuLOB2OV/kLui8=
+    </SignatureValue>
+  </Signature>
+</document>

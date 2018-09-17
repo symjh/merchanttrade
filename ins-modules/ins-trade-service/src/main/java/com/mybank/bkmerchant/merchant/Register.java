@@ -331,6 +331,9 @@ public class Register extends AbstractReq {
 
   /**
    * 自然人
+   * WechatMerchId - 242080272
+   * ChannelId - 240824008
+   * MerchantId - 226801000000141472259
    * @throws Exception
    */
   private static void nature() throws Exception {

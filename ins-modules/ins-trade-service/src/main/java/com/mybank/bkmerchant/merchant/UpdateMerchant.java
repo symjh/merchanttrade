@@ -85,7 +85,7 @@ public class UpdateMerchant {
         merchantDetail = new MerchantDetailWithoutBankCard();
         merchantDetail.setContactName("水电费");
 
-        //form.put("MerchantDetail", merchantDetail.genJsonBase64());
+        form.put("MerchantDetail", merchantDetail.genJsonBase64());
         List<TradeTypeEnum> tradeTypeEnumList = new ArrayList<TradeTypeEnum>();
         tradeTypeEnumList.add(TradeTypeEnum.Forward);
         tradeTypeEnumList.add(TradeTypeEnum.Backward);
