@@ -21,7 +21,7 @@ import com.mybank.bkmerchant.constant.SupportPrepaymentEnum;
 import com.mybank.bkmerchant.constant.TradeTypeEnum;
 import com.mybank.bkmerchant.models.BankCardParam;
 import com.mybank.bkmerchant.models.FeeParam;
-import com.mybank.bkmerchant.models.MerchantDetailWithoutBankCard;
+import com.mybank.bkmerchant.models.MerchantDetail;
 
 /**
  *  商户入驻申请接口（不开银行账户）
@@ -94,7 +94,7 @@ public class Register extends AbstractReq {
   /**
    * 商户详情
    */
-  private MerchantDetailWithoutBankCard merchantDetail;
+  private MerchantDetail merchantDetail;
 
   /**
    * 支持交易类型列表
@@ -181,7 +181,7 @@ public class Register extends AbstractReq {
     SupportPrepaymentEnum supportPrepayment,
     SettleModeEnum settleMode,
     MccEnum mcc,
-    MerchantDetailWithoutBankCard merchantDetail,
+    MerchantDetail merchantDetail,
     List<TradeTypeEnum> tradeTypeList,
     List<PayChannelEnum> payChannelList,
     List<DeniedPayToolEnum> deniedPayToolList,
@@ -247,18 +247,26 @@ public class Register extends AbstractReq {
 
 
   public static void main(String[] args) throws Exception {
-    nature();
-    //company();
+    //nature();
+    company();
 
   }
 
+  @Override
+  public Map<String, Object> call() throws Exception {
+    return super.call();
+  }
+
   /**
-   * 企业
+   * 企业 - 226801000000142576686
+   * WechatMerchId - 242972555
+   * ChannelId - 240824008
+   *
    * @throws Exception
    */
   private static void company() throws Exception {
-    MerchantDetailWithoutBankCard merchantDetail = new MerchantDetailWithoutBankCard(
-            "中科软1号",
+    MerchantDetail merchantDetail = new MerchantDetail(
+            "中科软-企业1号",
             "17620358925",
             "严水平",
             "", "", "", "",
@@ -269,8 +277,8 @@ public class Register extends AbstractReq {
             PrincipalCertTypeEnum.IdentityCard,
             "430723198809102650",
             "海南新视线人力资源服务有限公司",
-            "123232322111111",
-            "233223",
+            "123232322111112",
+            "",
             "d9a8f406-b3ee-44f5-be5e-78cbfafd77e3",
             "5b80e0d2-728f-43a8-ba50-1e76e9796b73",
             "e63f55bc-8d87-4b98-818c-9f87e1f3bc0e", "ff8a44ca-cc1d-4fc9-a51e-9e6ad0509883", "b9467b2e-a095-4d0e-8c21-f63503fe356e", "", "",""
@@ -300,6 +308,17 @@ public class Register extends AbstractReq {
             "01",
             "202436199402060494",
             "杭州"
+    );
+
+    // 订单号：2018091811150710010000000000000000165092
+    bankCardParam = new BankCardParam(
+            "6212261202002415210",
+            "名称",
+            AccountType.ORIENTED_PUBLIC,
+            "102331022094", "", "", "",
+            "01",
+            "202436199402060494",
+            "12"
     );
 
     Register register = new Register(
@@ -337,7 +356,7 @@ public class Register extends AbstractReq {
    * @throws Exception
    */
   private static void nature() throws Exception {
-    MerchantDetailWithoutBankCard merchantDetail = new MerchantDetailWithoutBankCard(
+    MerchantDetail merchantDetail = new MerchantDetail(
       "中科软1号",
       "17620358925",
       "严水平",

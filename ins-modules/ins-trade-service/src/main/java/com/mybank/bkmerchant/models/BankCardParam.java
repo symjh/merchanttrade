@@ -1,8 +1,9 @@
 package com.mybank.bkmerchant.models;
 
+import sun.misc.BASE64Encoder;
+
 import org.json.JSONException;
 import org.json.JSONObject;
-import sun.misc.BASE64Encoder;
 
 /**
  * Created by jingzhu.zr on 2017/8/15.
@@ -18,6 +19,9 @@ public class BankCardParam{
   String certType;
   String certNo;
   String cardHolderAddress;
+
+  public BankCardParam() {
+  }
 
   public BankCardParam(String bankCardNo, String bankCertName, String accountType, String contactLine, String branchName, String branchProvince, String branchCity, String certType, String certNo, String cardHolderAddress) {
     this.bankCardNo = bankCardNo;
@@ -45,8 +49,6 @@ public class BankCardParam{
     obj.put("CertType", certType);
     obj.put("CertNo", certNo);
     obj.put("CardHolderAddress", cardHolderAddress);
-
-    System.out.println(obj.toString());
 
     return new BASE64Encoder().encode(obj.toString().getBytes());
   }

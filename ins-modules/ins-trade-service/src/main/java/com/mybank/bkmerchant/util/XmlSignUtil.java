@@ -34,22 +34,22 @@ public class XmlSignUtil {
 
     /** 网商银行测试环境公钥 RSA */
     public static String bank_RSA_publicKey  = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDOb4B1dnwONcW0RoJMa0IOq3O6jiqnTGLUpxEw2xJg+c7wsb6DBy5CAoR0w2ZjZ/BjKxGIQ+DoDg3NsHJeyuEjNF0/Ro/R5xVpFC5z4cBVSC2/gddz4a1EoGDJewML/Iv0yIw7ylB86++h23nRd079c5S9RZXurBfnLW2Srhqk2QIDAQAB";
+
     /**
      * 签名- XML
-     * 
+     *
      * @throws Exception
      */
     public static String sign(String xmlContent) throws Exception {
         Document doc = parseDocumentByString(xmlContent);
         PrivateKey privateKey = SignatureUtils.getPrivateKey(RSA_privateKey);
-        String result = SignatureUtils.signXmlElement(privateKey, doc, "request",
-            XMLSignature.ALGO_ID_SIGNATURE_RSA_SHA256, 2);
+        String result = SignatureUtils.signXmlElement(privateKey, doc, "request", XMLSignature.ALGO_ID_SIGNATURE_RSA_SHA256, 2);
         return result;
     }
 
     /**
      * 验签 - XML
-     * 
+     *
      * @throws Exception
      */
     public static boolean verify(String xmlContent) throws Exception {
@@ -61,31 +61,30 @@ public class XmlSignUtil {
 
     /**
      * 解析XML
-     * 
+     *
      * @param xmlContent
      * @return
      * @throws SAXException
      * @throws IOException
      * @throws ParserConfigurationException
      */
-    private static Document parseDocumentByString(String xmlContent) throws SAXException,
-                                                                    IOException, Exception {
+    private static Document parseDocumentByString(String xmlContent) throws SAXException, IOException, Exception {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);// 否则无法识别namespace
         return factory.newDocumentBuilder().parse(new InputSource(new StringReader(xmlContent)));
     }
-    
-    public static void main(String[] args) throws Exception{
+
+    public static void main(String[] args) throws Exception {
         bank_RSA_publicKey  = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg0HDiStmHDTHOAptH5Jlp4sg03Czir/My4vvFK/7Un/zyuyTa3aHqav4+GqPhGJcIGIiLVuP/tCCEU4Edl3LC0bNxUBdnPv7k3HDoonWmqD/EhBXKe/GD/Dwrn90VfP1s314ykj8Z2T06l3LYb5F44L8JOgVrqJOe2FMXvsEt6sik2jnMdq2rJLeda1QLQMKnla4t2wVK1DoC0eu+ry3Oc2BWhYwU1bwWaX71mROH0Q3jXj3FFLdGp2trrnkKnQzNfGHjRChxTWl3CgiWbFd/Ejgp0/cpovq3cAJtxD7HdtwOibiI9u6owyWFM6C2pMjsuI23WofRyD9UQoU0UToiwIDAQAB";
         File file = new File("d:/sign.txt");
-        InputStream in  = new FileInputStream(file);
+        InputStream in = new FileInputStream(file);
         byte[] b = new byte[in.available()];
         in.read(b);
-        String xml =new String(b);
+        String xml = new String(b);
         in.close();
-       boolean result = verify(xml);
-       System.out.println(result);
+        boolean result = verify(xml);
+        System.out.println(result);
     }
 
 }
