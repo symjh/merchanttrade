@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2018-2020, Ripin Yan. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ins.platform.aggpay.trade.mapper.MerchantDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="ins.platform.aggpay.trade.model.entity.MerchantDetail">
+        <id column="id" property="id" />
+        <result column="alias" property="alias" />
+        <result column="contact_mobile" property="contactMobile" />
+        <result column="contact_name" property="contactName" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="district" property="district" />
+        <result column="address" property="address" />
+        <result column="service_phone_no" property="servicePhoneNo" />
+        <result column="email" property="email" />
+        <result column="legal_person" property="legalPerson" />
+        <result column="principal_mobile" property="principalMobile" />
+        <result column="principal_cert_type" property="principalCertType" />
+        <result column="principal_cert_no" property="principalCertNo" />
+        <result column="principal_person" property="principalPerson" />
+        <result column="buss_auth_num" property="bussAuthNum" />
+        <result column="cert_org_code" property="certOrgCode" />
+        <result column="cert_photo_a" property="certPhotoA" />
+        <result column="cert_photo_b" property="certPhotoB" />
+        <result column="license_photo" property="licensePhoto" />
+        <result column="prg_photo" property="prgPhoto" />
+        <result column="industry_license_photo" property="industryLicensePhoto" />
+        <result column="shop_photo" property="shopPhoto" />
+        <result column="other_photo" property="otherPhoto" />
+        <result column="subscribe_appi_d" property="subscribeAppiD" />
+        <result column="valid_ind" property="validInd" />
+        <result column="creator_code" property="creatorCode" />
+        <result column="create_time" property="createTime" />
+        <result column="updater_code" property="updaterCode" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, alias, contact_mobile AS contactMobile, contact_name AS contactName, province, city, district, address, service_phone_no AS servicePhoneNo, email, legal_person AS legalPerson, principal_mobile AS principalMobile, principal_cert_type AS principalCertType, principal_cert_no AS principalCertNo, principal_person AS principalPerson, buss_auth_num AS bussAuthNum, cert_org_code AS certOrgCode, cert_photo_a AS certPhotoA, cert_photo_b AS certPhotoB, license_photo AS licensePhoto, prg_photo AS prgPhoto, industry_license_photo AS industryLicensePhoto, shop_photo AS shopPhoto, other_photo AS otherPhoto, subscribe_appi_d AS subscribeAppiD, valid_ind AS validInd, creator_code AS creatorCode, create_time AS createTime, updater_code AS updaterCode, update_time AS updateTime
+    </sql>
+
+</mapper>

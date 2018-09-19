@@ -1,8 +1,10 @@
 package com.mybank.bkmerchant.merchant;
 
+import ins.platform.aggpay.trade.model.vo.RespInfoVo;
+import sun.misc.BASE64Decoder;
+
 import java.util.HashMap;
 import java.util.Map;
-
 import com.mybank.bkmerchant.base.AbstractReq;
 import com.mybank.bkmerchant.base.HttpsMain;
 
@@ -54,9 +56,17 @@ public class RegisterQuery extends AbstractReq {
   }
 
   public static void main(String[] args) throws Exception {
-    RegisterQuery registerQuery = new RegisterQuery("2018091311150710010000000000000000163746");
+    RegisterQuery registerQuery = new RegisterQuery("2018091811150710010000000000000000165045");
 
-    Map<String, Object> call = registerQuery.call();
-    System.out.println("#########" + call.toString());
+    Map<String, Object> rst = registerQuery.call();
+    System.out.println("#########" + rst.toString());
+
+    RespInfoVo respInfo = new RespInfoVo();
+    org.apache.commons.beanutils.BeanUtils.populate(respInfo,(Map<String,Object>)rst.get("respInfo"));
+    System.out.println("###respInfo:"+ respInfo.toString());
+    //将base加密的相关字段解密
+    BASE64Decoder decoder = new BASE64Decoder();
+    rst.put("wechatChannelList", new String(decoder.decodeBuffer((String) rst.get("wechatChannelList"))));
+    System.out.println((String) rst.get("wechatChannelList"));
   }
 }

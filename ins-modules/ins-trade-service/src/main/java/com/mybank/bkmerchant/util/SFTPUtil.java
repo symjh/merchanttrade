@@ -58,7 +58,7 @@ public class SFTPUtil {
     }
 
     public static void main(String[] args) throws Exception {
-               new SFTPUtil().connectFtpServer();
+        new SFTPUtil().connectFtpServer();
         //        System.out.println(response);
         //        System.out.println(response.split("\n").length);
     }
@@ -99,7 +99,7 @@ public class SFTPUtil {
 
     /**
      * 断开与对方FTP Server的连接
-     * 
+     *
      * @throws IOException
      */
     public void disconnectFtpServer() throws IOException {
@@ -142,8 +142,7 @@ public class SFTPUtil {
         changeWorkingDirectory(filePath); // 进入FTP服务器指定目录
         List<String> list = new ArrayList<String>();
         try {
-            @SuppressWarnings("rawtypes")
-            Vector data = sftpClient.ls("./");
+            @SuppressWarnings("rawtypes") Vector data = sftpClient.ls("./");
             LsEntry record = null;
             for (Object obj : data) {
                 record = (LsEntry) obj;

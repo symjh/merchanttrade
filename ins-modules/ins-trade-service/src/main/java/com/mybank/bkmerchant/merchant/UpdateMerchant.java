@@ -13,15 +13,17 @@ import java.util.UUID;
 import org.apache.commons.lang.StringUtils;
 import com.mybank.bkmerchant.base.HttpsMain;
 import com.mybank.bkmerchant.constant.AccountType;
+import com.mybank.bkmerchant.constant.DealTypeEnum;
 import com.mybank.bkmerchant.constant.DeniedPayToolEnum;
 import com.mybank.bkmerchant.constant.FeeTypeEnum;
+import com.mybank.bkmerchant.constant.MccEnum;
 import com.mybank.bkmerchant.constant.PayChannelEnum;
 import com.mybank.bkmerchant.constant.PrincipalCertTypeEnum;
 import com.mybank.bkmerchant.constant.ReturnCodeEnum;
 import com.mybank.bkmerchant.constant.TradeTypeEnum;
 import com.mybank.bkmerchant.models.BankCardParam;
 import com.mybank.bkmerchant.models.FeeParam;
-import com.mybank.bkmerchant.models.MerchantDetailWithoutBankCard;
+import com.mybank.bkmerchant.models.MerchantDetail;
 import com.mybank.bkmerchant.util.XmlSignUtil;
 import com.mybank.bkmerchant.util.XmlUtil;
 
@@ -56,15 +58,15 @@ public class UpdateMerchant {
         form.put("OutTradeNo", outTradeNo);
         form.put("IsvOrgId", HttpsMain.IsvOrgId);
         form.put("MerchantId", merchantId);
-        //form.put("DealType", DealTypeEnum.Entity.getDealCode());
+        form.put("DealType", DealTypeEnum.EntityAndInternet.getDealCode());
         //form.put("SupportPrepayment", SupportPrepaymentEnum.NotSupport.getSupCode());
         //form.put("SettleMode", SettleModeEnum.BankCard.getSettleCode());
-        //form.put("Mcc", MccEnum.Shopping.getMccId());
-//        MerchantDetailWithoutBankCard merchantDetail = new MerchantDetailWithoutBankCard("小商",
+        form.put("Mcc", MccEnum.HealthCare.getMccId());
+//        MerchantDetail merchantDetail = new MerchantDetail("小商",
 //            "18609320193", "小商老板", "", "", "", "", "010-40304230", "xiaoshang@qq.com", "",
 //            "18609320193", PrincipalCertTypeEnum.IdentityCard, "211103198007194934", "小商老板", "",
 //            "", "身份证正面.jpg", "身份证反面.jpg", "", "", "", "", "","");
-        MerchantDetailWithoutBankCard merchantDetail = new MerchantDetailWithoutBankCard(
+        MerchantDetail merchantDetail = new MerchantDetail(
                 "中科软1号",
                 "17620358925",
                 "严水平",
@@ -82,10 +84,12 @@ public class UpdateMerchant {
                 "5b80e0d2-728f-43a8-ba50-1e76e9796b73",
                 "", "", "", "", "",""
         );
-        merchantDetail = new MerchantDetailWithoutBankCard();
-        merchantDetail.setContactName("水电费");
-
-        //form.put("MerchantDetail", merchantDetail.genJsonBase64());
+        merchantDetail = new MerchantDetail();
+//        merchantDetail.setContactName("水电费");
+        // 已测
+        merchantDetail.setAlias("中科软2号");
+        //merchantDetail.setCertPhotoB("2461eae4-4813-4022-811f-4be94c41a398");
+        form.put("MerchantDetail", merchantDetail.genJsonBase64());
         List<TradeTypeEnum> tradeTypeEnumList = new ArrayList<TradeTypeEnum>();
         tradeTypeEnumList.add(TradeTypeEnum.Forward);
         tradeTypeEnumList.add(TradeTypeEnum.Backward);
@@ -96,13 +100,14 @@ public class UpdateMerchant {
         payChannelEnumList.add(PayChannelEnum.WX);
         //form.put("PayChannelList", PayChannelEnum.genPayChannelList(payChannelEnumList));
         List<DeniedPayToolEnum> deniedPayToolEnumList = new ArrayList<DeniedPayToolEnum>();
-        deniedPayToolEnumList.add(DeniedPayToolEnum.Huabei);
+        deniedPayToolEnumList.add(DeniedPayToolEnum.CreditCard);
         //form.put("DeniedPayToolList", DeniedPayToolEnum.genDenniedPayToolList(deniedPayToolEnumList));
 
         List<FeeParam> feeParamList = new ArrayList<FeeParam>();
         feeParamList.add(new FeeParam(PayChannelEnum.Ali, FeeTypeEnum.T1, "0.0031"));
         feeParamList.add(new FeeParam(PayChannelEnum.WX, FeeTypeEnum.T1, "0.0031"));
-        form.put("FeeParamList", FeeParam.genJsonBase64(feeParamList));
+        // 已测试
+        // form.put("FeeParamList", FeeParam.genJsonBase64(feeParamList));
 //        BankCardParam bankCardParam = new BankCardParam("23423244243242423", "工商银行",
 //            AccountType.ORIENTED_PRIVATE, "", "", "", "",
 //            PrincipalCertTypeEnum.IdentityCard.getCertCode(), "211032349", "杭州市");

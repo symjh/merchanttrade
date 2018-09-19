@@ -3,23 +3,15 @@
     <head>
       <Version>1.0.0</Version>
       <Appid>2018090700000286</Appid>
-      <Function>ant.mybank.merchantprod.merchant.updateMerchant</Function>
-      <ReqTime>2018-09-13 19:41:53.233</ReqTime>
+      <Function>ant.mybank.merchantprod.merchant.query</Function>
+      <ReqTime>2018-09-17 17:28:24.135</ReqTime>
       <ReqTimeZone>UTC+8</ReqTimeZone>
-      <ReqMsgId>85fb9f2c-dc9f-41b9-a24b-042c0b8a3d18</ReqMsgId>
+      <ReqMsgId>be0521da-ac8e-4a97-bfc2-2732c14efc00</ReqMsgId>
       <InputCharset>UTF-8</InputCharset>
     </head>
     <body>
       <IsvOrgId>202210000000000001316</IsvOrgId>
       <MerchantId>226801000000141472259</MerchantId>
-      <DealType>01</DealType>
-      <SupportPrepayment>N</SupportPrepayment>
-      <SettleMode>01</SettleMode>
-      <Mcc>2015062600002758</Mcc>
-      <FeeParamList>W3siRmVlVmFsdWUiOiIwLjAwMzEiLCJGZWVUeXBlIjoiMDIiLCJDaGFubmVsVHlwZSI6IjAxIn0s
-        eyJGZWVWYWx1ZSI6IjAuMDAzMSIsIkZlZVR5cGUiOiIwMiIsIkNoYW5uZWxUeXBlIjoiMDIifV0=
-      </FeeParamList>
-      <OutTradeNo>f142a7e9-838b-412d-b429-811e7666ae0b</OutTradeNo>
     </body>
   </request>
   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -31,15 +23,15 @@
           <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
         </ds:Transforms>
         <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-        <ds:DigestValue>fzyik7PzDr+Uzml0AVlcZ+EFgxI=</ds:DigestValue>
+        <ds:DigestValue>A8sUuJaIeZsGlD3mKfYpO/fmhuI=</ds:DigestValue>
       </ds:Reference>
     </ds:SignedInfo>
     <ds:SignatureValue>
-      QuWFtV5/wf7XL8TjYisKn5HnV4KYGKrxeu0i6F7j30d+mLfKqZvctiNUPaqXZ0j+aXyHYcSG/ZKP
-      ymqzuJRJ/UuELfB/AL2MT0jMOayvqI6TvWS7xaRcGfnmhBysyXiGN+O2BfYMtI8zNoenlzJoLZNR
-      ZB0AnV/amRfeWpYlUz46zHJGqWiEEPlgMID64YLgLsXgvc+oz5q7G7YrKwpv95u8nOMnH3nF4rnT
-      Wz5kvvfbR/3sv8VvijHkj5SDYNeGtGdPxrzebs55P8RHKHnDe9VQ+dfTET+8xm/pE2UgCy9PTiqW
-      uuG+WsvxOnri/zzAzkDgWuW4ihLrl8X2smZnoQ==
+      ZOqJzb2Ptzv/RetLtqNxHdyXSWmblb3xy3Ym78IPpOxLW9q264NgcaLKCKD4juQnGq6IKR4orV1P
+      xWNog0ANHu0JONBCGfkN8hnvA+INaPJdmHa7gH+XqhN+KMvS8TXMZtTxccOh97hVnHPKrUi/qQPy
+      LmPkLo6/q/MDUkx5WtxF0bmsaN1Ri0S3CfnX66bK5GTnwJNaTQnqCXBcDxVT01PK75ZqUl8PkRN5
+      B+TEDtl0KccJAttA/IMUCJPNpbm42YI11rA3FWFVVZeVDCplSymBCEkvCKdp6SRpVZ7uRl+Q/u0g
+      GZVe5OyOQaQED1BeWvNGXk2MqV4f//Q4Lh5oEA==
     </ds:SignatureValue>
   </ds:Signature>
 </document>

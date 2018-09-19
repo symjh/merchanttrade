@@ -36,7 +36,7 @@ public class ResourcesGenerator {
 
 
     public static void main(String[] args) {
-        String outputDir = "/Users/lengleng/work/temp";
+        String outputDir = "/Users/yanshuiping/Desktop/generator";
         final String viewOutputDir = outputDir + "/view/";
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
@@ -50,7 +50,7 @@ public class ResourcesGenerator {
         gc.setBaseResultMap(true);
         // XML columList
         gc.setBaseColumnList(true);
-        gc.setAuthor("lengleng");
+        gc.setAuthor("ripin");
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
@@ -58,8 +58,8 @@ public class ResourcesGenerator {
         dsc.setDbType(DbType.MYSQL);
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("lengleng");
-        dsc.setUrl("jdbc:mysql://139.224.200.249:3309/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false");
+        dsc.setPassword("Sinosoft2018@");
+        dsc.setUrl("jdbc:mysql://47.106.91.233:3306/sinosoft?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false");
         mpg.setDataSource(dsc);
 
         // 策略配置
@@ -72,7 +72,7 @@ public class ResourcesGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("ins.platform.aggpay.admin");
+        pc.setParent("ins.platform.aggpay.trade");
         pc.setController("controller");
         mpg.setPackageInfo(pc);
 

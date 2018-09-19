@@ -14,6 +14,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang3.text.WordUtils;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -274,10 +275,10 @@ public class XmlUtil {
                         ArrayList<Object> oList=new ArrayList<Object>();
                         oList.add(o);
                         oList.add(parseBody(e.elements()));
-                        bodyMap.put(e.getName(), oList);
+                        bodyMap.put(WordUtils.uncapitalize(e.getName()), oList);
                     }
                 }else{
-                    bodyMap.put(e.getName(), parseBody(e.elements()));
+                    bodyMap.put(WordUtils.uncapitalize(e.getName()), parseBody(e.elements()));
                 }
             //无子元素且非空
             }else if(e.getText()!=null && !"".equals(e.getText())){
@@ -291,10 +292,10 @@ public class XmlUtil {
                         ArrayList<Object> oList=new ArrayList<Object>();
                         oList.add(o);
                         oList.add(e.getText());
-                        bodyMap.put(e.getName(), oList);
+                        bodyMap.put(WordUtils.uncapitalize(e.getName()), oList);
                     }
                 }else{
-                    bodyMap.put(e.getName(), e.getText());
+                    bodyMap.put(WordUtils.uncapitalize(e.getName()), e.getText());
                 }
             }
         }

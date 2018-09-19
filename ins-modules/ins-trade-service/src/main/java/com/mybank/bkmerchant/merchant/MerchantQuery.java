@@ -83,8 +83,10 @@ public class MerchantQuery extends AbstractReq {
     rst.put("MerchantDetail", new String(decoder.decodeBuffer((String) rst.get("MerchantDetail")), "UTF-8"));
     rst.put("FeeParamList", new String(decoder.decodeBuffer((String) rst.get("FeeParamList"))));
     rst.put("BankCardParam", new String(decoder.decodeBuffer((String) rst.get("BankCardParam"))));
+    rst.put("WechatChannelList", new String(decoder.decodeBuffer((String) rst.get("WechatChannelList"))));
     System.out.println((String) rst.get("MerchantDetail"));
     System.out.println((String) rst.get("FeeParamList"));
     System.out.println((String) rst.get("BankCardParam"));
+    System.out.println((String) rst.get("WechatChannelList"));
   }
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2018-2020, Ripin Yan. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ins.platform.aggpay.trade.mapper.MerchantMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="ins.platform.aggpay.trade.model.entity.Merchant">
+        <id column="id" property="id" />
+        <result column="out_merchant_id" property="outMerchantId" />
+        <result column="merchant_id" property="merchantId" />
+        <result column="merchant_name" property="merchantName" />
+        <result column="merchant_type" property="merchantType" />
+        <result column="deal_type" property="dealType" />
+        <result column="support_prepayment" property="supportPrepayment" />
+        <result column="settle_mode" property="settleMode" />
+        <result column="mcc" property="mcc" />
+        <result column="trade_type_list" property="tradeTypeList" />
+        <result column="pay_channel_list" property="payChannelList" />
+        <result column="denied_pay_tool_list" property="deniedPayToolList" />
+        <result column="auth_code" property="authCode" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="support_stage" property="supportStage" />
+        <result column="partner_type" property="partnerType" />
+        <result column="alipay_source" property="alipaySource" />
+        <result column="wechat_channel" property="wechatChannel" />
+        <result column="rate_version" property="rateVersion" />
+        <result column="valid_ind" property="validInd" />
+        <result column="creator_code" property="creatorCode" />
+        <result column="create_time" property="createTime" />
+        <result column="updater_code" property="updaterCode" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, out_merchant_id AS outMerchantId, merchant_id AS merchantId, merchant_name AS merchantName, merchant_type AS merchantType, deal_type AS dealType, support_prepayment AS supportPrepayment, settle_mode AS settleMode, mcc, trade_type_list AS tradeTypeList, pay_channel_list AS payChannelList, denied_pay_tool_list AS deniedPayToolList, auth_code AS authCode, out_trade_no AS outTradeNo, support_stage AS supportStage, partner_type AS partnerType, alipay_source AS alipaySource, wechat_channel AS wechatChannel, rate_version AS rateVersion, valid_ind AS validInd, creator_code AS creatorCode, create_time AS createTime, updater_code AS updaterCode, update_time AS updateTime
+    </sql>
+
+</mapper>
