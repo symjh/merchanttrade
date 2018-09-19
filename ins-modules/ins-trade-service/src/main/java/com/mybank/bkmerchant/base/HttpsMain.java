@@ -36,9 +36,11 @@ public class HttpsMain {
     public static String        certNo       = "512734195005252263";
 
     /**
-     * 商户ID -自然人-226801000000141472259
+     * 商户ID
+     * 1. 自然人-226801000000141472259
+     * 2. 企业商户-226801000000142576686
      */
-    public static String        merchantId   = "226801000000141472259";
+    public static String        merchantId   = "226801000000142576686";
 
     /**
      * 渠道
@@ -55,9 +57,9 @@ public class HttpsMain {
      */
     public static final String  currencyCode = "156";
 
-    //sit环境url
-    //public static String        reqUrl       = "https://fcsupergw.dl.alipaydev.com/open/api/common/requestasync.htm";
     public static String        reqUrl       = "https://fcsupergw.dl.alipaydev.com/open/api/common/request2.htm";
+
+    public static String        payUrl       = "https://fcsupergw.dl.alipaydev.com/open/api/common/requestasync.htm";
 
     public static String        uploadUrl    = "https://fcsupergwlite.dl.alipaydev.com/ant/mybank/merchantprod/merchant/uploadphoto.htm";
     /**
