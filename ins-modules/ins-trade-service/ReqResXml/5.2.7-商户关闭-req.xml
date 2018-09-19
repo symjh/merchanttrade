@@ -1,0 +1,40 @@
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.freeze</Function>
+      <ReqTime>2018-09-18 16:53:30.019</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>7e95500e-3fcb-4415-9093-ed04a4e054db</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <MerchantId>226801000000142627642</MerchantId>
+      <FreezeReason>存在欺诈风险</FreezeReason>
+      <OutTradeNo>f1cc83e0-4dd9-404d-8ad4-0daf15463e79</OutTradeNo>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315">
+      </ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>XWd0SbidHX89oGDLZowUu5i8u+E=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      SDkZU98ZSXzN6idqrI5XOHE6+Ct+CqVIhxyQEs3+yS7vhOAvwMi7NQOzsnojBExgajY3idfx8imd
+      VdWZ2S4/XBQozMaI+glmewpxv2tj9t/d8UnYrMffD2MNPId7+E7Rtr5wEwiqEPpG1SwYN+VrkQkr
+      HAlo8OvGZMvaGF9k8SKujKgFluFpKLVAUD28YM6Cfjve3V1Po9nEsvxJHEpC3UaQoKfKD2IDoJVi
+      k+MHAwjJ4jhgMNy7JIc2SEg2mEKq55GQyUsOvWkpFUEtrnCZX8raIWrTp793ETMPWjZR4WHiA+/L
+      irivkqvPx3yWDGEVogpmd6xkDZHl58ueJSUe0w==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>
