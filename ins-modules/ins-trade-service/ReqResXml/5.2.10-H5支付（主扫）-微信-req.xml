@@ -1,0 +1,62 @@
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.bkmerchanttrade.prePay</Function>
+      <ReqTime>2018-09-19 23:44:07.253</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>e301d855-2b78-48ea-b900-c8d4cd95f88b</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <OutTradeNo>a64ae87aba43413f9e4b78584c3dfc4f</OutTradeNo>
+      <Body>主扫测试-无人机1</Body>
+      <GoodsTag>test</GoodsTag>
+      <GoodsDetail>test</GoodsDetail>
+      <TotalAmount>1</TotalAmount>
+      <Currency>CNY</Currency>
+      <MerchantId>226801000000142576686</MerchantId>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <ChannelType>WX</ChannelType>
+      <OpenId>test</OpenId>
+      <OperatorId>test</OperatorId>
+      <StoreId>test</StoreId>
+      <DeviceId>test</DeviceId>
+      <DeviceCreateIp>127.0.0.1</DeviceCreateIp>
+      <ExpireExpress>60</ExpireExpress>
+      <SettleType>T1</SettleType>
+      <Attach>test</Attach>
+      <SubAppId>wx62a55dbdd041bb1d</SubAppId>
+      <SpecifySubMerchId>N</SpecifySubMerchId>
+      <ChannelId></ChannelId>
+      <SubMerchId></SubMerchId>
+      <PayLimit>pcredit</PayLimit>
+      <DiscountableAmount>1</DiscountableAmount>
+      <UndiscountableAmount>1</UndiscountableAmount>
+      <AlipayStoreId>支付宝的店铺编号</AlipayStoreId>
+      <SysServiceProviderId>2018090700000286</SysServiceProviderId>
+      <CheckLaterNm>0</CheckLaterNm>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>qC76X0YyxOnwTCyK6cs6MQRmlO8=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      PEJaDJkvVP1x9kHRcGapSvTPk18WY/JptY3/O1kUcZJlZ5VLh67lWpEQcLAp1cVb8EtixgKiB7wh
+      OxRNMLluzlTedpkPxuNEAdzB2xijfaJYP7kNQBnu/vDIyex0RtxGnkwalDfnF4rKkuBqp24OUBgp
+      qxN971FGgydua9KpuXWy8p+GR+mBoTfVrma8+f7D2rn0YXUqtbYczild9x/XVjgvesRrD630DQpg
+      Rwnc7l3zSbb4gxRtL7MZFHVauJ2C72u0BYrJsVulhJJQZC1G5hkQsPQOxGNf8lc3DP49CfEnnpX4
+      kb5BfRkwB9tSIRHrKDz37ths3SxkSO2gU9jLTA==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>

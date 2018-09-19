@@ -1,0 +1,89 @@
+<!--
+  ~ Copyright (c) 2018-2020, Ripin Yan. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.query</Function>
+      <RespTime>20180919143918</RespTime>
+      <RespTimeZone>UTC+8</RespTimeZone>
+      <ReqMsgId>47c861af-1d44-494d-9933-1a779e35efcb</ReqMsgId>
+      <Reserve></Reserve>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg>请求处理成功</ResultMsg>
+      </RespInfo>
+      <MerchantName>名称</MerchantName>
+      <MerchantId>226801000000142576686</MerchantId>
+      <MerchantType>03</MerchantType>
+      <DealType>01</DealType>
+      <SupportPrepayment>N</SupportPrepayment>
+      <SettleMode>01</SettleMode>
+      <Mcc>2015050700000000</Mcc>
+      <MerchantDetail>
+        eyJBbGlhcyI6IuS4reenkei9rzHlj7ciLCJCdXNzQXV0aE51bSI6IjEyMzIzMjMyMjExMTExMSIsIkNlcnRPcmdDb2RlIjoiMjMzMjIzIiwiQ2VydFBob3RvQSI6ImQ5YThmNDA2LWIzZWUtNDRmNS1iZTVlLTc4Y2JmYWZkNzdlMyIsIkNlcnRQaG90b0IiOiI1YjgwZTBkMi03MjhmLTQzYTgtYmE1MC0xZTc2ZTk3OTZiNzMiLCJDaXR5IjoiIiwiQ29udGFjdE1vYmlsZSI6IjE3NjIwMzU4OTI1IiwiQ29udGFjdE5hbWUiOiLkuKXmsLTlubMiLCJEaXN0cmljdCI6IiIsIkVtYWlsIjoieWFuc2h1aXBpbmc5MjVAMTYzLmNvbSIsIkluZHVzdHJ5TGljZW5zZVBob3RvIjoiYjk0NjdiMmUtYTA5NS00ZDBlLThjMjEtZjYzNTAzZmUzNTZlIiwiTGVnYWxQZXJzb24iOiLlkI3np7AiLCJMaWNlbnNlUGhvdG8iOiJlNjNmNTViYy04ZDg3LTRiOTgtODE4Yy05Zjg3ZTFmM2JjMGUiLCJQcmdQaG90byI6ImZmOGE0NGNhLWNjMWQtNGZjOS1hNTFlLTllNmFkMDUwOTg4MyIsIlByaW5jaXBhbENlcnRObyI6IjQzMDcyMzE5ODgwOTEwMjY1MCIsIlByaW5jaXBhbENlcnRUeXBlIjoiMDEiLCJQcmluY2lwYWxQZXJzb24iOiLmtbfljZfmlrDop4bnur/kurrlipvotYTmupDmnI3liqHmnInpmZDlhazlj7giLCJQcm92aW5jZSI6IiIsIlNlcnZpY2VQaG9uZU5vIjoiMDEwNDAzMDQyMzAifQ==
+      </MerchantDetail>
+      <TradeTypeList>01,02,06</TradeTypeList>
+      <PayChannelList>01,02</PayChannelList>
+      <DeniedPayToolList>03</DeniedPayToolList>
+      <FeeParamList>
+        W3siQ2hhbm5lbFR5cGUiOiIwMSIsIkZlZVR5cGUiOiIwMiIsIkZlZVZhbHVlIjowLjAwMzV9LHsiQ2hhbm5lbFR5cGUiOiIwMiIsIkZlZVR5cGUiOiIwMiIsIkZlZVZhbHVlIjowLjAwMzV9XQ==
+      </FeeParamList>
+      <BankCardParam>
+        eyJBY2NvdW50VHlwZSI6IjAyIiwiQmFua0NhcmRObyI6IjYyMTIyNjEyMDIwMDI0MTUyMTAiLCJCYW5rQ2VydE5hbWUiOiLlkI3np7AiLCJCcmFuY2hDaXR5IjoiMzMwMTAwIiwiQnJhbmNoTmFtZSI6IuW3peWVhumTtuihjCIsIkJyYW5jaFByb3ZpbmNlIjoiMzMwMDAwIiwiQ2FyZEhvbGRlckFkZHJlc3MiOiLmna3lt54iLCJDZXJ0Tm8iOiIyMDI0MzYxOTk0MDIwNjA0OTQiLCJDZXJ0VHlwZSI6IjAxIiwiQ29udGFjdExpbmUiOiIxMDIzMzEwMjIwOTQifQ==
+      </BankCardParam>
+      <SupportStage>N</SupportStage>
+      <Smid>2088000062485197</Smid>
+      <WechatChannelList>W3siQ2hhbm5lbElkIjoiMjQwODI0MDA4IiwiV2VjaGF0TWVyY2hJZCI6IjI0Mjk3MjU1NSJ9XQ==</WechatChannelList>
+      <OnlineMcc></OnlineMcc>
+      <OnlineSmid></OnlineSmid>
+      <AlipaySource>2018090700000286</AlipaySource>
+      <AlipayOnlineSource></AlipayOnlineSource>
+      <MergeSettle>0</MergeSettle>
+      <MergeDt></MergeDt>
+      <SiteInfo></SiteInfo>
+      <SiteInfo></SiteInfo>
+      <AlipayChannelList>
+        W3siQXBwaWQiOiIyMDE1MDUxMTAwMDY5MTcwIiwiUGlkIjoiMjA4ODkxMTIxMjQxNjIwMSIsIlJhdGVWZXJzaW9uIjoiUlMiLCJTdWJNZXJjaGFudElkIjoiMjA4ODAwMDA2MjQ4NTE5NyJ9XQ==
+      </AlipayChannelList>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>kWuw/bt1G8fbN2ifMe3D2vhjYCQ=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      hizW3r4HNF+wqezLT4fdkFmWh+vxZFXRI8f120j/otVytwR1ECZjEGO0HEU/oasxve1ROfFRlYU7
+      r2PmnsRiiHocVYPA0+0csq6efnDl9WlcMcmkg4yI6rNCZrD4KHFPiR7ZEuiAKQ8LUXVnc5ePWlLg
+      UovyFwty9g69p5wS5Cg=
+    </SignatureValue>
+  </Signature>
+</document>
