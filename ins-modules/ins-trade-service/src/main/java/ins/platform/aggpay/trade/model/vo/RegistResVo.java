@@ -20,4 +20,5 @@ import lombok.Data;
 public class RegistResVo {
 
 	private RespInfoVo respInfo;
+	private String outMerchantId;
 }

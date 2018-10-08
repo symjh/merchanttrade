@@ -28,8 +28,10 @@ public class PayQuery {
      */
     public static void main(String[] args) throws Exception {
         //payQuery(HttpsMain.merchantId, "8da48e91ec074585a5a9bae81241829e");
-        //payQuery(HttpsMain.merchantId, "0651e38c0fa243dfab6f99a4f7ed21e5");
-        payQuery(HttpsMain.merchantId, "a64ae87aba43413f9e4b78584c3dfc4f");
+        //微信成功
+        // payQuery(HttpsMain.merchantId, "0651e38c0fa243dfab6f99a4f7ed21e5");
+        // payQuery(HttpsMain.merchantId, "a64ae87aba43413f9e4b78584c3dfc4f");
+        payQuery(HttpsMain.merchantId, "3db6ec42abd142b98377a681b944b8bf");
 
     }
 

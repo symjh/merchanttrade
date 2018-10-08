@@ -38,9 +38,9 @@ public class ScanPay {
         form.put("ReqMsgId", UUID.randomUUID().toString());
         // 成功authcode
         // 28763443825664394
-        // 微信ok-134621141753364349
+        // 微信ok-134621141753364349-134723186961316101
         form.put("AuthCode", "134621141753364349");
-        form.put("AuthCode", "289272013267742892");
+        form.put("AuthCode", "284808638893205454");
         form.put("OutTradeNo",UUID.randomUUID().toString().replace("-",""));
         form.put("Body","反扫测试-碧螺春3");
         form.put("GoodsTag","test");
@@ -51,10 +51,10 @@ public class ScanPay {
         form.put("IsvOrgId", HttpsMain.IsvOrgId);
         form.put("ChannelType","WX");
         form.put("ChannelType","ALI");
-//        form.put("OperatorId","test");
+        //        form.put("OperatorId","test");
 //        form.put("StoreId","test");
 //        form.put("DeviceId","test");
-        form.put("DeviceCreateIp","127.0.0.1");
+        form.put("DeviceCreateIp","112.97.59.21");
         form.put("ExpireExpress","120");
         form.put("SettleType","T1");
         form.put("Attach","附加信息");
@@ -64,7 +64,7 @@ public class ScanPay {
         //form.put("AlipayStoreId","支付宝的店铺编号");
         form.put("SysServiceProviderId","2018090700000286");
         //form.put("CheckLaterNm","");
-//        form.put("SubAppId","");
+        form.put("SubAppId","wx62a55dbdd041bb1d");
 //        form.put("SpecifySubMerchId","N");
 //        form.put("ChannelId","240824008");
 //        form.put("SubMerchId","242972555");

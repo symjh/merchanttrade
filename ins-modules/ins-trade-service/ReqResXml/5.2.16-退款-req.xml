@@ -3,16 +3,22 @@
     <head>
       <Version>1.0.0</Version>
       <Appid>2018090700000286</Appid>
-      <Function>ant.mybank.bkmerchanttrade.payQuery</Function>
-      <ReqTime>2018-09-20 10:55:14.3</ReqTime>
+      <Function>ant.mybank.bkmerchanttrade.refund</Function>
+      <ReqTime>2018-09-20 16:14:56.745</ReqTime>
       <ReqTimeZone>UTC+8</ReqTimeZone>
-      <ReqMsgId>7d293c08-d6a5-4f45-a552-949fcaf76755</ReqMsgId>
+      <ReqMsgId>1e35cd24-5ac2-406c-a15e-de8d2ab32549</ReqMsgId>
       <InputCharset>UTF-8</InputCharset>
     </head>
     <body>
       <IsvOrgId>202210000000000001316</IsvOrgId>
-      <OutTradeNo>0651e38c0fa243dfab6f99a4f7ed21e5</OutTradeNo>
+      <OutTradeNo>d030f25477ae491e96d1d4a840d9ba77</OutTradeNo>
       <MerchantId>226801000000142576686</MerchantId>
+      <OutRefundNo>e4dc11cb-038d-49fa-bfc0-8b3db533d4a4</OutRefundNo>
+      <RefundAmount>2</RefundAmount>
+      <RefundReason>test</RefundReason>
+      <OperatorId>test</OperatorId>
+      <DeviceId>test</DeviceId>
+      <DeviceCreateIp>127.0.0.1</DeviceCreateIp>
     </body>
   </request>
   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -24,15 +30,15 @@
           <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
         </ds:Transforms>
         <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-        <ds:DigestValue>y3Dv04k7DXyr75CacLdDD27DHx8=</ds:DigestValue>
+        <ds:DigestValue>xHO4yh2wu3nt6QeyrqRqC6umJ3o=</ds:DigestValue>
       </ds:Reference>
     </ds:SignedInfo>
     <ds:SignatureValue>
-      aGHcVu1uxn5L1kUwDoWVOL+QRQTWKhgVYsgbLeO1UFWtLnQ2jUI332yneHy1bB8fJSZqLMxcKuKJ
-      dxwpOoYd+Au+NY8NXm4RVqraRqPe7A7B3FwMuLwW+XtWlRIBV2iePXXmY7g78fzS4PnwOsKKo9ik
-      3yWyL4JqdN5K3Nq7gxa2ZNR4dwZ2Y617tU96wKUqUB4ADRTrcqZMwVuMfXBt4E7xUnaFBkcFIqQ7
-      SG0qHi3A0A0pLs3LWhPD0J23IGvZmOoE6DSJV/WeJEUmCryupJhWvU6UO3jEawfM5R6bSvullvrb
-      a5VFrJlnGWoRTHhsqMUMGbrv63c2IIrPxWpUGg==
+      ftRbFWWkTibF9lSnTMiIhUrxN88mWUrtTPZ+3uzXjxV9bEQ0fDm5ZFtVKy295H/goUmbETWioypB
+      XC6Mog+RXivVjAN23M5JnNIzcPaUKofDo2Kx4t4TSlMlLIyTA/VDhsvylupr1q2aaB9C7eHrN6aB
+      eJE3jPaDpHIZibcvAAPul++3TtdzMm5iyM8eNsYd9edHBUuw0RSwYSO2fVlCVHORLoXj5Z3Gp5b0
+      A7OPLFnw8TE5jikdxAB7fiGEcPvKmMmO6jUdr/hcRPPZCo+z/rHltluP8fNcTifYfgA0L96Bocqr
+      lO+dVBohtGkyR93Z1OiOe7L8fkMkjo8kj9fMPw==
     </ds:SignatureValue>
   </ds:Signature>
 </document>

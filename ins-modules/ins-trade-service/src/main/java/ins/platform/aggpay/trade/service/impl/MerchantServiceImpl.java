@@ -21,8 +21,10 @@ import ins.platform.aggpay.trade.model.entity.Merchant;
 import ins.platform.aggpay.trade.model.vo.RegistResVo;
 import ins.platform.aggpay.trade.service.MerchantService;
 
+import java.util.Map;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.mybank.bkmerchant.merchant.Register;
 
 /**
  * <p>
@@ -36,7 +38,21 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 public class MerchantServiceImpl extends ServiceImpl<MerchantMapper, Merchant> implements MerchantService {
 
 	@Override
-	public RegistResVo regist() {
+	public RegistResVo regist(Register register) {
+
+		try {
+			Map<String, Object> call = register.call();
+			Object resultStatus = call.get("resultStatus");
+			if(resultStatus.equals("S")){
+
+				//update merchant 入驻结果
+
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
 		return null;
 	}
 }

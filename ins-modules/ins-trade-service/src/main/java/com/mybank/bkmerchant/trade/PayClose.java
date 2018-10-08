@@ -33,15 +33,15 @@ public class PayClose {
      */
     public static void main(String[] args) throws Exception {
         Map<String, Object> map = PayQuery.payQuery(HttpsMain.merchantId,
-            "0034d296-1b3b-453f-a2c7-1fd453167d70");
+            "3db6ec42abd142b98377a681b944b8bf");
         //非处理中订单不能关闭
         if (MapUtils.isEmpty(map)
-            || !StringUtils.equals(TradeStatusEnum.paying.getStatusCode(), map.get("TradeStatus")
+            || !StringUtils.equals(TradeStatusEnum.paying.getStatusCode(), map.get("tradeStatus")
                 .toString())) {
-            System.out.println(map.get("TradeStatus").toString() + "订单状态不是支付中无法关单");
+            System.out.println(map.get("tradeStatus").toString() + "订单状态不是支付中无法关单");
             return;
         }
-        payClose(HttpsMain.merchantId, UUID.randomUUID().toString());
+        payClose(HttpsMain.merchantId, "3db6ec42abd142b98377a681b944b8bf");
 
     }
 
@@ -56,19 +56,28 @@ public class PayClose {
         form.put("ReqTime", new Timestamp(System.currentTimeMillis()).toString());
         //reqMsgId每次报文必须都不一样
         form.put("ReqMsgId", UUID.randomUUID().toString());
+        form.put("IsvOrgId", HttpsMain.IsvOrgId);
         form.put("MerchantId", merchantId);
         form.put("OutTradeNo", outTradeNo);
-        form.put("IsvOrgId", HttpsMain.IsvOrgId);
 
         //封装报文
         String param = xmlUtil.format(form, function);
         if (HttpsMain.isSign) {//生产环境需进行rsa签名
             param = XmlSignUtil.sign(param);
         }
+
+        System.out.println("-------------------------");
+        System.out.println("---------REQUEST---------");
+        System.out.println("-------------------------");
         System.out.println(param);
         //发送请求
         String response = HttpsMain.httpsReq(HttpsMain.reqUrl, param);
+
+        System.out.println("-------------------------");
+        System.out.println("---------RESPONSE--------");
+        System.out.println("-------------------------");
         System.out.println(response);
+
         if (HttpsMain.isSign) {//生产环境需进行rsa验签
             if (!XmlSignUtil.verify(response)) {
                 throw new Exception("验签失败");

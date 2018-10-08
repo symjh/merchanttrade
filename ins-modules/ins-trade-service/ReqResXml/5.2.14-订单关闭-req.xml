@@ -3,16 +3,16 @@
     <head>
       <Version>1.0.0</Version>
       <Appid>2018090700000286</Appid>
-      <Function>ant.mybank.bkmerchanttrade.payQuery</Function>
-      <ReqTime>2018-09-20 10:55:14.3</ReqTime>
+      <Function>ant.mybank.bkmerchanttrade.payClose</Function>
+      <ReqTime>2018-09-20 14:51:45.428</ReqTime>
       <ReqTimeZone>UTC+8</ReqTimeZone>
-      <ReqMsgId>7d293c08-d6a5-4f45-a552-949fcaf76755</ReqMsgId>
+      <ReqMsgId>1f7b16f1-2a51-4008-b229-ed229e1b883c</ReqMsgId>
       <InputCharset>UTF-8</InputCharset>
     </head>
     <body>
       <IsvOrgId>202210000000000001316</IsvOrgId>
-      <OutTradeNo>0651e38c0fa243dfab6f99a4f7ed21e5</OutTradeNo>
       <MerchantId>226801000000142576686</MerchantId>
+      <OutTradeNo>0651e38c0fa243dfab6f99a4f7ed21e5</OutTradeNo>
     </body>
   </request>
   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -24,15 +24,15 @@
           <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
         </ds:Transforms>
         <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-        <ds:DigestValue>y3Dv04k7DXyr75CacLdDD27DHx8=</ds:DigestValue>
+        <ds:DigestValue>iAk/zC5/ZBMJ/w3Cmcw800T1x00=</ds:DigestValue>
       </ds:Reference>
     </ds:SignedInfo>
     <ds:SignatureValue>
-      aGHcVu1uxn5L1kUwDoWVOL+QRQTWKhgVYsgbLeO1UFWtLnQ2jUI332yneHy1bB8fJSZqLMxcKuKJ
-      dxwpOoYd+Au+NY8NXm4RVqraRqPe7A7B3FwMuLwW+XtWlRIBV2iePXXmY7g78fzS4PnwOsKKo9ik
-      3yWyL4JqdN5K3Nq7gxa2ZNR4dwZ2Y617tU96wKUqUB4ADRTrcqZMwVuMfXBt4E7xUnaFBkcFIqQ7
-      SG0qHi3A0A0pLs3LWhPD0J23IGvZmOoE6DSJV/WeJEUmCryupJhWvU6UO3jEawfM5R6bSvullvrb
-      a5VFrJlnGWoRTHhsqMUMGbrv63c2IIrPxWpUGg==
+      kJBgtfoWNL62vilByGTrGZv2aC1/B7wS7XWT7Sa15IFG2Cj3okD9NGuFlaFhyVWsuWkjsPCDbCXy
+      JUffVG9RkbUN7C0/ic858keQvvOcEbwMbWtnaPrjLyktNj0vIGXJcbEPCjmeUEWJdAxn/3U7r7Jp
+      dyVPgqqxMX15xjBoEDJLFcsEIrAuwIrqnZZe2bELK9UD+6/3Qrx9SC/n2tN2Nmre7kLus6xIH01n
+      6I76outVQYufj7pcbmaMrgwWMy+EOLJjSrwKePvWT/hUvtKvjUtMT7OFc3AxRCjujEax3ONDxWaG
+      2dK2CH0piXibwRK0uCLX4qnTSw7z5RlTTqFjGQ==
     </ds:SignatureValue>
   </ds:Signature>
 </document>

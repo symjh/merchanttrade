@@ -4,7 +4,7 @@
 <!--
 4.2.11	订单关闭接口<ant.mybank.bkmerchanttrade.payClose> -->
 <body>
-<xmlTag tagName="IsvOrgId"></xmlTag>
-<xmlTag tagName="OutTradeNo"></xmlTag>
-<xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="IsvOrgId"></xmlTag>
+  <xmlTag tagName="MerchantId"></xmlTag>
+  <xmlTag tagName="OutTradeNo"></xmlTag>
 </body>

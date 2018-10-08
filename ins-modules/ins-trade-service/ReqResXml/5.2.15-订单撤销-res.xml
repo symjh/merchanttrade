@@ -3,26 +3,22 @@
     <head>
       <Version>1.0.0</Version>
       <Appid>2018090700000286</Appid>
-      <Function>ant.mybank.bkmerchanttrade.prePay</Function>
-      <RespTime>20180920122054</RespTime>
+      <Function>ant.mybank.bkmerchanttrade.payCancel</Function>
+      <RespTime>20180920104833</RespTime>
       <RespTimeZone>UTC+8</RespTimeZone>
-      <ReqMsgId>9f5da43b-907f-4157-954f-d223e73f9918</ReqMsgId>
+      <ReqMsgId>4e09f8fd-ebde-4ecc-b829-1d6e91dcca60</ReqMsgId>
       <Reserve></Reserve>
       <SignType>RSA</SignType>
       <InputCharset>UTF-8</InputCharset>
     </head>
     <body>
       <RespInfo>
-        <ResultStatus>S</ResultStatus>
-        <ResultCode>0000</ResultCode>
-        <ResultMsg></ResultMsg>
+        <ResultStatus>F</ResultStatus>
+        <ResultCode>MT_PAY_ORDER_STATUS_ERROR</ResultCode>
+        <ResultMsg>支付单当前状态为支付成功,不允许此交易</ResultMsg>
       </RespInfo>
-      <OutTradeNo>3db6ec42abd142b98377a681b944b8bf</OutTradeNo>
-      <OrderNo>2018092010152010020001680000483513</OrderNo>
-      <PrePayId>wx20122053670301d30f6aa6c10098175412</PrePayId>
-      <PayInfo>
-        {"appId":"wxdace645e0bc2c424","nonceStr":"45c73316e8fab5407fde4083bb0842aa","package":"prepay_id=wx20122053670301d30f6aa6c10098175412","paySign":"4D6C84F10D7B78556896A761395E27A8","signType":"MD5","timeStamp":"1537417253"}
-      </PayInfo>
+      <OutTradeNo>0651e38c0fa243dfab6f99a4f7ed21e5</OutTradeNo>
+      <OrderNo></OrderNo>
     </body>
   </response>
   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
@@ -34,13 +30,13 @@
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
-        <DigestValue>rR7esdXTrc/uIKHM0KWtTkWwUIU=</DigestValue>
+        <DigestValue>mNVi//ydAnqmwO2pGmLe7jqGokA=</DigestValue>
       </Reference>
     </SignedInfo>
     <SignatureValue>
-      GfPTtf7GkmRbfrX8r1O19gLD41QZFsvXtTJqUMSTHs+a5EJgvHJ+n53BxZJbo2foL2NcYSC+2K8Y
-      4+2OM2uKhG8UtC70gmF2qwzmhikZ+4DlYhqQG1eERsoFgEyc8UBDQEXeeIxyrAa6ByHWURQ5GuGW
-      wQx6rzcxHgO4OwPD98A=
+      gS01VvHUqQhTCdTSxKCbyMm61YucOVb8kvxP8dPyhvpBNDXN3bhqWGB3F+pEY+YTNdIwoT6rPiQA
+      R5VmVaHjW5FKQKKZM1aTFt5wuRI6kSnH/P1atjudZBbLhO/nNNP1IKXajYnYJ/NsIg75Gb3KGX82
+      BjrlO0vXMl1E2isH3zA=
     </SignatureValue>
   </Signature>
 </document>

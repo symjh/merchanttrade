@@ -13,6 +13,7 @@ import ins.platform.aggpay.trade.model.entity.Merchant;
 import ins.platform.aggpay.trade.model.vo.RegistResVo;
 
 import com.baomidou.mybatisplus.service.IService;
+import com.mybank.bkmerchant.merchant.Register;
 
 /**
  * @author RipinYan
@@ -22,6 +23,8 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface MerchantService extends IService<Merchant> {
 
-	RegistResVo regist();
+	RegistResVo regist(Register register);
+
+
 
 }

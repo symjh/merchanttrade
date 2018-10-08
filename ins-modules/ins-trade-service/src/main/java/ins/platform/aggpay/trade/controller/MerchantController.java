@@ -109,4 +109,6 @@ public class MerchantController extends BaseController {
         merchant.setUpdateTime(new Date());
         return new R<>(merchantService.updateById(merchant));
     }
+
+    //regist
 }
