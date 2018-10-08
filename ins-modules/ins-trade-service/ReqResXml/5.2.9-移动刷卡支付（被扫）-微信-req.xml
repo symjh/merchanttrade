@@ -1,0 +1,116 @@
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.bkmerchanttrade.pay</Function>
+      <ReqTime>2018-09-19 23:21:53.951</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>29a06528-d078-4482-a99d-4c872b6cdd39</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <AuthCode>134621141753364349</AuthCode>
+      <OutTradeNo>0651e38c0fa243dfab6f99a4f7ed21e5</OutTradeNo>
+      <Body>反扫测试-碧螺春2</Body>
+      <GoodsTag>test</GoodsTag>
+      <GoodsDetail>test</GoodsDetail>
+      <TotalAmount>3</TotalAmount>
+      <Currency>CNY</Currency>
+      <MerchantId>226801000000142576686</MerchantId>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <ChannelType>WX</ChannelType>
+      <OperatorId>test</OperatorId>
+      <StoreId>test</StoreId>
+      <DeviceId>test</DeviceId>
+      <DeviceCreateIp>127.0.0.1</DeviceCreateIp>
+      <ExpireExpress>120</ExpireExpress>
+      <SettleType>T1</SettleType>
+      <Attach>附加信息</Attach>
+      <PayLimit>pcredit</PayLimit>
+      <DiscountableAmount>1</DiscountableAmount>
+      <UndiscountableAmount>2</UndiscountableAmount>
+      <AlipayStoreId>支付宝的店铺编号</AlipayStoreId>
+      <SysServiceProviderId>2018090700000286</SysServiceProviderId>
+      <SubAppId></SubAppId>
+      <SpecifySubMerchId>N</SpecifySubMerchId>
+      <ChannelId>240824008</ChannelId>
+      <SubMerchId>242972555</SubMerchId>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>Fa618YyPNWQblI+8xaCm1GQiino=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      CZHbujLdHg+/h5MdW5OdJVbQ1zMpR5482Cz/6AtXFWJ/N2tfCt3AXoTUtoC8zF2P9+vgc9jRDIkm
+      lm0sRVdr4+zoCi5GS3HKA/hbfHxCM8cs/JC6TIrTBDuGVrE1YXSI+BQmGmFTwTqGwTVTz/8oREtU
+      xUCqnhE/Iyo9U8/KJLVOfNqhhSAvYfjEXvlICr7naKwmXSojogh15vrS2Ha+DMbJZQKEhqNy56hS
+      r33kGCobfsEFQQH6xahqgGM93KzeUJuIHCc4kfI169SKS+ecQ+BsZNy5UlC0n7/6V4sUitHpr2yG
+      xqYZEFSYqOejCiNFRh1BauQgh2Btaep6icor3Q==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>
+
+<document>
+<request id="request">
+  <head>
+    <Version>1.0.0</Version>
+    <Appid>2018090700000286</Appid>
+    <Function>ant.mybank.bkmerchanttrade.pay</Function>
+    <ReqTime>2018-09-20 12:19:08.665</ReqTime>
+    <ReqTimeZone>UTC+8</ReqTimeZone>
+    <ReqMsgId>dd1747b7-5be5-4bbf-a13d-f52b04253467</ReqMsgId>
+    <InputCharset>UTF-8</InputCharset>
+  </head>
+  <body>
+    <AuthCode>134723186961316101</AuthCode>
+    <OutTradeNo>d030f25477ae491e96d1d4a840d9ba77</OutTradeNo>
+    <Body>反扫测试-碧螺春3</Body>
+    <GoodsTag>test</GoodsTag>
+    <GoodsDetail>test</GoodsDetail>
+    <TotalAmount>3</TotalAmount>
+    <Currency>CNY</Currency>
+    <MerchantId>226801000000142576686</MerchantId>
+    <IsvOrgId>202210000000000001316</IsvOrgId>
+    <ChannelType>WX</ChannelType>
+    <DeviceCreateIp>112.97.59.21</DeviceCreateIp>
+    <ExpireExpress>120</ExpireExpress>
+    <SettleType>T1</SettleType>
+    <Attach>附加信息</Attach>
+    <PayLimit>pcredit</PayLimit>
+    <DiscountableAmount>1</DiscountableAmount>
+    <UndiscountableAmount>2</UndiscountableAmount>
+    <SysServiceProviderId>2018090700000286</SysServiceProviderId>
+    <SubAppId>wx62a55dbdd041bb1d</SubAppId>
+  </body>
+</request>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ds:SignedInfo>
+    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+    <ds:Reference URI="">
+      <ds:Transforms>
+        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+      </ds:Transforms>
+      <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+      <ds:DigestValue>khRuQHlal9OvY7hHO7t+wR/+T0g=</ds:DigestValue>
+    </ds:Reference>
+  </ds:SignedInfo>
+  <ds:SignatureValue>
+    THmH/CqE0Nt9OcFLBQUDPxVBC6XIV7q+RykX6jaROlNdnZ/NWHrE7FURomSEhGTDgA3e0/YCof71
+    MAb66RVxiICBuJIAwQJLz05nTzi0D8ev/CIsCn/tKOYMEB+tc3YmseGVxO5BsewG3n95MEuVyCc+
+    gJ9CEsVnrbSxOC3OemC/JhS59OLZM0d+iz5QKFnOuJUNus1lXxH6uMI5tyfqcUxrtwtOCdB2OT70
+    UJx0dQtKJ/WO+9el8Cmd9iMnluig1RVx2gHFclKf/29V6J9sLllsk1DtCP2Hkw2Jme+l51Ai0gbI
+    U/uM226unKxBTGZcYNzyub6UgYAlYv405TD1oQ==
+  </ds:SignatureValue>
+</ds:Signature>
+</document>

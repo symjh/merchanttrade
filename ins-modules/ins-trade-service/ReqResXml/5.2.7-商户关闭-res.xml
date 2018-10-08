@@ -1,0 +1,42 @@
+<document>
+  <response id="response">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.merchantprod.merchant.freeze</Function>
+      <RespTime>20180918165332</RespTime>
+      <RespTimeZone>UTC+8</RespTimeZone>
+      <ReqMsgId>7e95500e-3fcb-4415-9093-ed04a4e054db</ReqMsgId>
+      <Reserve></Reserve>
+      <SignType>RSA</SignType>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <RespInfo>
+        <ResultStatus>S</ResultStatus>
+        <ResultCode>0000</ResultCode>
+        <ResultMsg>请求处理成功</ResultMsg>
+      </RespInfo>
+      <OutTradeNo>f1cc83e0-4dd9-404d-8ad4-0daf15463e79</OutTradeNo>
+    </body>
+  </response>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315">
+      </CanonicalizationMethod>
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+        <DigestValue>zWN1QvKJvb/aWnSmG1WQ6PNc2yU=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>
+      XnYfrjzO164kNJ37usPBgbJJjEaK1Pt98maX3t79N4A7FuoKEyPp8cA4dvJLTRz8jKLNtLSRwjQu
+      klAJSkBmauYitMSz6ZdGQhXYhfiAPxPBWPkonCxqWkSQKw7NkpuHaNYC6VgKg1JZhE/zt4dgZru7
+      20FsXLvPjRp5XPBGEUY=
+    </SignatureValue>
+  </Signature>
+</document>

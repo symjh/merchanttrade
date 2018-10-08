@@ -21,6 +21,7 @@ import com.mybank.bkmerchant.util.XmlUtil;
 public class ScanPay {
 
     /**
+     * 订单号：2018091910152010010001680000480068
      * @author simon.xxm
      * @version $Id: BalanceQuery.java, v 0.1 2016年3月3日 下午6:33:49 simon.xxm Exp $
      * @param args      
@@ -35,34 +36,38 @@ public class ScanPay {
         form.put("ReqTime", new Timestamp(System.currentTimeMillis()).toString());
         //reqMsgId每次报文必须都不一样
         form.put("ReqMsgId", UUID.randomUUID().toString());
-        form.put("AuthCode", "28763443825664394");
+        // 成功authcode
+        // 28763443825664394
+        // 微信ok-134621141753364349-134723186961316101
+        form.put("AuthCode", "134621141753364349");
+        form.put("AuthCode", "284808638893205454");
         form.put("OutTradeNo",UUID.randomUUID().toString().replace("-",""));
-        form.put("Body","反扫测试-碧螺春");
-        form.put("GoodsMemo","test");
+        form.put("Body","反扫测试-碧螺春3");
         form.put("GoodsTag","test");
         form.put("GoodsDetail","test");
-        form.put("TotalAmount","2");
+        form.put("TotalAmount","3");
         form.put("Currency","CNY");
         form.put("MerchantId",HttpsMain.merchantId);
         form.put("IsvOrgId", HttpsMain.IsvOrgId);
         form.put("ChannelType","WX");
-        form.put("OperatorId","test");
-        form.put("StoreId","test");
-        form.put("DeviceId","test");
-        form.put("DeviceCreateIp","127.0.0.1");
-        form.put("ExpireExpress","60");
+        form.put("ChannelType","ALI");
+        //        form.put("OperatorId","test");
+//        form.put("StoreId","test");
+//        form.put("DeviceId","test");
+        form.put("DeviceCreateIp","112.97.59.21");
+        form.put("ExpireExpress","120");
         form.put("SettleType","T1");
         form.put("Attach","附加信息");
-        form.put("PayLimit","credit");
+        form.put("PayLimit","pcredit");
         form.put("DiscountableAmount","1");
-        form.put("UndiscountableAmount","1");
-        form.put("AlipayStoreId","支付宝的店铺编号");
+        form.put("UndiscountableAmount","2");
+        //form.put("AlipayStoreId","支付宝的店铺编号");
         form.put("SysServiceProviderId","2018090700000286");
-        form.put("CheckLaterNm","3");
-        form.put("SubAppId","");
-        form.put("SpecifySubMerchId","N");
-        form.put("ChannelId","240824008");
-        form.put("SubMerchId","242972555");
+        //form.put("CheckLaterNm","");
+        form.put("SubAppId","wx62a55dbdd041bb1d");
+//        form.put("SpecifySubMerchId","N");
+//        form.put("ChannelId","240824008");
+//        form.put("SubMerchId","242972555");
 
         //封装报文
         String param = xmlUtil.format(form, function);
@@ -75,7 +80,7 @@ public class ScanPay {
         System.out.println(param);
 
         //发送请求
-        String response = HttpsMain.httpsReq(HttpsMain.reqUrl, param);
+        String response = HttpsMain.httpsReq(HttpsMain.payUrl, param);
 
         System.out.println("-------------------------");
         System.out.println("---------RESPONSE--------");

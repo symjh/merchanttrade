@@ -35,25 +35,32 @@ public class Refund {
         form.put("ReqTime", new Timestamp(System.currentTimeMillis()).toString());
         //reqMsgId每次报文必须都不一样
         form.put("ReqMsgId", UUID.randomUUID().toString());
+        form.put("OutTradeNo","d030f25477ae491e96d1d4a840d9ba77");
         form.put("MerchantId",HttpsMain.merchantId);
-        form.put("OutTradeNo",UUID.randomUUID().toString());
-        form.put("OutRefundNo",UUID.randomUUID().toString());
         form.put("IsvOrgId", HttpsMain.IsvOrgId);
-        form.put("RefundAmount","123");
+        form.put("OutRefundNo",UUID.randomUUID().toString());
+        form.put("RefundAmount","1");
         form.put("RefundReason","test");
         form.put("OperatorId","test");
         form.put("DeviceId","test");
         form.put("DeviceCreateIp","127.0.0.1");
-        form.put("IsvOrgId", HttpsMain.IsvOrgId);
 
         //封装报文
         String param = xmlUtil.format(form, function);
         if (HttpsMain.isSign) {//生产环境需进行rsa签名
             param = XmlSignUtil.sign(param);
         }
+
+        System.out.println("-------------------------");
+        System.out.println("---------REQUEST---------");
+        System.out.println("-------------------------");
         System.out.println(param);
         //发送请求
         String response = HttpsMain.httpsReq(HttpsMain.reqUrl, param);
+
+        System.out.println("-------------------------");
+        System.out.println("---------RESPONSE--------");
+        System.out.println("-------------------------");
         System.out.println(response);
         if (HttpsMain.isSign) {//生产环境需进行rsa验签
             if (!XmlSignUtil.verify(response)) {

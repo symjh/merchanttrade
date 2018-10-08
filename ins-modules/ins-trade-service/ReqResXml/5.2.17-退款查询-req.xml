@@ -1,0 +1,106 @@
+<!--
+  ~ Copyright (c) 2018-2020, Ripin Yan. All Rights Reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<document>
+  <request id="request">
+    <head>
+      <Version>1.0.0</Version>
+      <Appid>2018090700000286</Appid>
+      <Function>ant.mybank.bkmerchanttrade.refund</Function>
+      <ReqTime>2018-09-20 16:14:56.745</ReqTime>
+      <ReqTimeZone>UTC+8</ReqTimeZone>
+      <ReqMsgId>1e35cd24-5ac2-406c-a15e-de8d2ab32549</ReqMsgId>
+      <InputCharset>UTF-8</InputCharset>
+    </head>
+    <body>
+      <IsvOrgId>202210000000000001316</IsvOrgId>
+      <OutTradeNo>d030f25477ae491e96d1d4a840d9ba77</OutTradeNo>
+      <MerchantId>226801000000142576686</MerchantId>
+      <OutRefundNo>e4dc11cb-038d-49fa-bfc0-8b3db533d4a4</OutRefundNo>
+      <RefundAmount>2</RefundAmount>
+      <RefundReason>test</RefundReason>
+      <OperatorId>test</OperatorId>
+      <DeviceId>test</DeviceId>
+      <DeviceCreateIp>127.0.0.1</DeviceCreateIp>
+    </body>
+  </request>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+      <ds:Reference URI="">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+        <ds:DigestValue>xHO4yh2wu3nt6QeyrqRqC6umJ3o=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>
+      ftRbFWWkTibF9lSnTMiIhUrxN88mWUrtTPZ+3uzXjxV9bEQ0fDm5ZFtVKy295H/goUmbETWioypB
+      XC6Mog+RXivVjAN23M5JnNIzcPaUKofDo2Kx4t4TSlMlLIyTA/VDhsvylupr1q2aaB9C7eHrN6aB
+      eJE3jPaDpHIZibcvAAPul++3TtdzMm5iyM8eNsYd9edHBUuw0RSwYSO2fVlCVHORLoXj5Z3Gp5b0
+      A7OPLFnw8TE5jikdxAB7fiGEcPvKmMmO6jUdr/hcRPPZCo+z/rHltluP8fNcTifYfgA0L96Bocqr
+      lO+dVBohtGkyR93Z1OiOe7L8fkMkjo8kj9fMPw==
+    </ds:SignatureValue>
+  </ds:Signature>
+</document>
+
+
+<document>
+<request id="request">
+  <head>
+    <Version>1.0.0</Version>
+    <Appid>2018090700000286</Appid>
+    <Function>ant.mybank.bkmerchanttrade.refund</Function>
+    <ReqTime>2018-09-20 16:24:04.292</ReqTime>
+    <ReqTimeZone>UTC+8</ReqTimeZone>
+    <ReqMsgId>845e0b23-27ca-44af-9c61-12634c7d83d6</ReqMsgId>
+    <InputCharset>UTF-8</InputCharset>
+  </head>
+  <body>
+    <IsvOrgId>202210000000000001316</IsvOrgId>
+    <OutTradeNo>d030f25477ae491e96d1d4a840d9ba77</OutTradeNo>
+    <MerchantId>226801000000142576686</MerchantId>
+    <OutRefundNo>3bc5fb7f-8a40-4e07-abe5-dc24fbad60dd</OutRefundNo>
+    <RefundAmount>1</RefundAmount>
+    <RefundReason>test</RefundReason>
+    <OperatorId>test</OperatorId>
+    <DeviceId>test</DeviceId>
+    <DeviceCreateIp>127.0.0.1</DeviceCreateIp>
+  </body>
+</request>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ds:SignedInfo>
+    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+    <ds:Reference URI="">
+      <ds:Transforms>
+        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+      </ds:Transforms>
+      <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+      <ds:DigestValue>UTR40EWW+aSZijdVJBAD/Ta2S5s=</ds:DigestValue>
+    </ds:Reference>
+  </ds:SignedInfo>
+  <ds:SignatureValue>
+    Y/WWGzOO1ecx/WcMu9qNQg3KQuHGfHmGsziwEaPFSWnDjjDxCnDRxHhpNCOwhvXMF1Q6pV/Cdij3
+    UYCvJgoCQtRoFrVFMxUYOrUnh9Ge7UUou5uS2JjFom2zXLwj3ZTBreFzSfkQzsqfOIJXqQGw3tk9
+    9L4Dp92pJJ0/CAwEypu1YPu1Q4Eq4U4H3yV+hhGfgnhJnvOsNGo9E4UWLH5bK+tKADgoyfiO9if6
+    cB7rsLWoOn1G9VFh/7KfmEe7CCISSUkVaA+pI2I/Q5kUxIy37CW8Zq8ihrttxVZND81zbkN0dp8g
+    KY/LitEP9dOAInANlLE/DXQCOVsTEVaNuJcZ9Q==
+  </ds:SignatureValue>
+</ds:Signature>
+</document>
